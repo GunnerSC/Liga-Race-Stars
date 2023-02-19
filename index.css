@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+:root {
+    --cor0:#2D2545;
+    --cor1:#1D1634;
+    --cor2:#110B23;
+    --cor3:#080414;
+    --cor4:#020108;
+
+
+    --cor5:#453E5C;
+    --cor6:#29233C;
+    --cor7:#1C1631;
+    --cor8:#110B23;
+}
+
+body {
+    background-image: linear-gradient(to left, #18102A, #0D071A, #05020E,#010004);
+    color: white;
+    width:1000px;
+    margin: auto;
+    font-variant: small-caps;
+    overflow-x: auto;
+    
+}
+
+
+
+#hiddenres {
+    display: none;
+}
+
+menu {
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    padding: 0px;
+    display: none;
+}
+
+#mainmenu {
+    margin-top: 40px;
+    display: grid;
+}
+
+#mainmenu > input {
+    color: white;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    height: 2em;
+    width: 10em;
+    border-radius: 20px;
+    border: 1px solid white;    
+}
+
+a.menu:hover {
+    color: gold;
+}
+
+
+a.menu {
+    display: inline-block;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    height: 1.5em;
+    width: 8em;
+    border-radius: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.496);
+}
+
+h1, h2, #voltar {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: bolder;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0d589e;
+}
+
+
+#logo {
+    text-align: center;
+    margin: 50px;
+    margin-top: 50px;
+}
+
+#title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 65px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, input:hover {
+    color: gold;
+}
+
+table {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
+    width: 800px;;
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.496);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+table.tabletitle {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
+    width: 600px;
+    border-collapse: collapse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.tptitle {
+    text-align: center;
+    margin: 0px;
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+table#construtor {
+    width: 400px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 20px;
+}
+
+th {
+    padding: 5px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.496);
+}
+
+td {
+    padding: 5px;
+    padding-left: 20px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.496);
+    font-variant: normal;
+}
+
+.tdtitle {
+    padding: 5px;
+    padding-left: 20px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.496);
+    font-variant: normal;
+    font-size: 20px;
+}
+
+.tablepts {
+    width: 400px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 20px;
+}
+
+.consttittle {
+    font-size: 20px;
+    width: 20px;
+}
+
+.teamrank {
+    font-size: 20px;
+    width: 35px;
+    padding-left: 20px;
+}
+
+
+
+
+.edition {
+    padding: 0px;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+img {
+    padding-right: 10px;
+}
+
+img.podium {
+    padding-right: 1px;
+}
+#voltar {
+    text-align: center;
+}
+#voltar > p > a {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    font-size: 30px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0d589e;
+}
+
+.car {
+    width: 70px;
+}
+
+span {
+   /* display: none;*/
+    font-size: 12px;
+}
+.spanpts {
+    color: greenyellow;
+}
+span.spantitle {
+    margin-left: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+span.dif {
+    color: rgb(64, 192, 243);
+}
+
+span.Mercedes {
+    font-variant: small-caps;
+    color: cyan
+}
+
+span.Caterham {
+    font-variant: small-caps;
+    color: rgb(17, 245, 17);
+}
+
+span.Ferrari {
+    font-variant: small-caps;
+    color: rgb(255, 54, 54);
+}
+
+span.RedBull {
+    font-variant: small-caps;
+    color: rgb(64, 192, 243);
+}
+
+span.Satsu {
+    font-variant: small-caps;
+    color: rgb(235, 2, 235);
+}
+
+span.ToroRosso {
+    font-variant: small-caps;
+    color: rgb(2, 60, 234);
+}
+
+span.Williams {
+    font-variant: small-caps;
+    color: rgb(66, 120, 246);
+}
+
+span.Lotus {
+    font-variant: small-caps;
+    color: yellow;
+}
+
+span.Sauber {
+    font-variant: small-caps;
+    color: rgb(97, 5, 5);
+}
+
+span.McLaren {
+    font-variant: small-caps;
+    color: rgb(254, 157, 31);
+}
+
+span.ForceIndia {
+    font-variant: small-caps;
+    color: rgb(255, 204, 0);
+}
+
+span.HRT {
+    font-variant: small-caps;
+    color: sienna;
+}
+
+span.Marussia {
+    font-variant: small-caps;
+    color: rgba(82, 82, 82, 0.698);
+
+}
+
+span.TecNova {
+    font-variant: small-caps;
+    color: rgb(235, 2, 235);
+}
+
+.hidden1, .hidden2, .hidden3 {
+    display: none;
+}
+
+
+.tp {
+    text-align: center;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+span#Mercedes {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: cyan
+}
+
+span#Caterham {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: rgb(17, 245, 17);
+}
+
+span#Ferrari {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: rgb(255, 54, 54);
+}
+
+span#RedBull {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: rgb(64, 192, 243);
+}
+
+span#Satsu {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: rgb(235, 2, 235);
+}
+
+span#ToroRosso {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: rgb(2, 60, 234);
+}
+
+span#Williams {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: rgb(66, 120, 246);
+}
+
+span#Lotus {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: yellow;
+}
+
+span#Sauber {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: rgb(97, 5, 5);
+}
+
+span#McLaren {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: rgb(254, 157, 31);
+}
+
+span#ForceIndia {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: rgb(255, 204, 0);
+}
+
+span#HRT {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: sienna;
+}
+
+span#Marussia {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: rgba(82, 82, 82, 0.698);
+
+}
+
+span#TecNova {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: rgb(235, 2, 235);
+}
+
+
+#statspage {
+    width: 1000px;
+    padding: 0px;
+    text-align: center;
+}
+
+.statsplayer {
+    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7));
+    text-align: center;
+    margin: 10px;
+    display: inline-table;
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.496);
+    border-radius: 25px;
+    font-family: 'Luckiest Guy', cursive;
+    font-variant: small-caps;
+    font-size: 16px;
+}
+
+.statsplayer > p {
+    text-align: left;
+    margin-left: 50px;
+}
+
