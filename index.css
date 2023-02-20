@@ -14,7 +14,7 @@
 }
 
 body {
-    background-image: linear-gradient(to left, #18102A, #0D071A, #05020E,#010004);
+    background-image:url(img/backgroundfull.jpg);
     color: white;
     width:1000px;
     margin: auto;
@@ -42,20 +42,8 @@ menu {
     display: grid;
 }
 
-#mainmenu > input {
-    color: white;
-    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
-    font-family: 'Luckiest Guy', cursive;
-    font-weight: lighter;
-    font-size: 25px;
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;
-    height: 2em;
-    width: 10em;
-    border-radius: 20px;
-    border: 1px solid white;    
+.menu {
+    padding: 5px;
 }
 
 a.menu:hover {
