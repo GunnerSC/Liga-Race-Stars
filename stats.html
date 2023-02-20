@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Stars League</title>
+    <link rel="stylesheet" href="stats.css">
+</head>
+<body id="res" onload="stats()">
+
+        <div id="hiddenres">
+            <h2>Edições</h2>
+            <table id="maintable">
+                <colgroup>
+                <col class="coledi">
+                <col class="colp1">
+                <col class="colp2">
+                <col class="colp3">
+                </colgroup>
+            <thead>
+                <tr>
+                    <th scope="colgroup">Edição</th>
+                    <th scope="colgroup">🏆 Campeão</th>
+                    <th scope="colgroup">🥈 Vice-campeão</th>
+                    <th scope="colgroup">🥉 Terceiro</th>
+                </tr>
+            </thead>
+            <tbody id="results">
+                <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/960263491053293588/unknown.png?width=1189&height=669" target="_blank">1ª edição</a></th>
+                <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 McLaren">McLaren</span> <span class="gunnerpt spanpts">152pts</span></td>
+                <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">146pts</span></td>
+                <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Caterham">Caterham</span> <span class="nekomoript spanpts">136pts</span></td>
+                </tr>
+                <tr>
+                <th scope="row" class="edition"><a href="https://cdn.discordapp.com/attachments/960263390222229545/960290894634950727/unknown.png" target="_blank">2ª edição</a></th>
+                <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">108pts</span></td>
+                <td class="p2"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp2 Caterham">Caterham</span> <span class="nekomoript spanpts">101pts</span></td>
+                <td class="p3"><img src="img/bot.png" alt="">Bot <span class="carp3 Marussia">Marussia</span> <span class="spanpts">78pts</span></td>
+                <td class="hidden1">Gunner <span class="McLaren">McLaren</span> <span class="gunnerpt spanpts">66pts</span></td>
+                </tr>
+                <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/960298352388485120/unknown.png?width=1189&height=669" target="_blank">3ª edição</a></th>
+                <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="nekomoript spanpts">81pts</span></td>
+                <td class="p2"><img src="img/bot.png" alt="">Bot <span class="carp2 Mercedes">Mercedes</span> <span class="spanpts">61pts</span></td>
+                <td class="p3"><img src="img/Gunner.png" alt="">Gunner <span class="carp3 Ferrari">Ferrari</span> <span class="gunnerpt spanpts">49pts</span></td>
+                <td class="hidden1">Sliink <span class="Ferrari">Ferrari</span> <span class="sliinkpt spanpts">49pts</span></td>
+            
+                </tr><tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/960303268368633946/unknown.png?width=1157&height=669" target="_blank">4ª edição</a></th>
+                <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="nekomoript spanpts">43pts</span></td>
+                <td class="p2"><img src="img/bot.png" alt="">Bot <span class="carp2 RedBull">Red Bull</span> <span class="spanpts">43pts</span></td>
+                <td class="p3"><img src="img/bot.png" alt="">Bot <span class="carp3 McLaren">McLaren</span> <span class="spanpts">40pts</span></td>
+                <td class="hidden1">Gunner <span class="TecNova">TecNova</span> <span class="gunnerpt spanpts">35pts</span></td>
+                <td class="hidden2">Sliink <span class="Ferrari">Ferrari</span> <span class="sliinkpt spanpts">22pts</span></td>
+            
+                </tr><tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/960712081571737610/unknown.png?width=1189&height=669" target="_blank">5ª edição</a></th>
+                <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">103pts</span></td>
+                <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 McLaren">McLaren</span> <span class="gunnerpt spanpts">89pts</span></td>
+                <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Caterham">Caterham</span> <span class="nekomoript spanpts">64pts</span></td>
+            
+                </tr><tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/960722578710880316/unknown.png?width=1189&height=669" target="_blank">6ª edição</a></th>
+                <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 McLaren">McLaren</span> <span class="gunnerpt spanpts">68pts</span></td>
+                <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">49pts</span></td>
+                <td class="p3"><img src="img/bot.png" alt="">Bot <span class="carp3 Mercedes">Mercedes</span> <span class="spanpts">34pts</span></td>
+                <td class="hidden1">Nekomori <span class="Caterham">Caterham</span> <span class="nekomoript spanpts">22pts</span></td>
+            
+                </tr><tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/961430076111601684/unknown.png?width=1189&height=669" target="_blank">7ª edição</a></th>
+                <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="nekomoript spanpts">109pts</span></td>
+                <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 McLaren">McLaren</span> <span class="sliinkpt spanpts">94pts</span></td>
+                <td class="p3"><img src="img/Gunner.png" alt="">Gunner <span class="carp3 Caterham">Caterham</span> <span class="gunnerpt spanpts">67pts</span></td>
+               </tr>
+               <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/961436556781039706/unknown.png?width=1189&height=669" target="_blank">8ª edição</a></th>
+                <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 McLaren">McLaren</span> <span class="sliinkpt spanpts">83pts</span></td>
+                <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 ToroRosso">Toro Rosso</span> <span class="gunnerpt spanpts">76pts</span></td>
+                <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Caterham">Caterham</span> <span class="nekomoript spanpts">57pts</span></td>           
+                </tr>
+                <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/961787301850152960/unknown.png?width=1189&height=669" target="_blank">9ª edição</a></th>
+                <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 McLaren">McLaren</span> <span class="gunnerpt spanpts">110pts</span></td>
+                <td class="p2"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp2 Caterham">Caterham</span> <span class="nekomoript spanpts">81pts</span></td>
+                <td class="p3"><img src="img/Sliink.png" alt="">Sliink <span class="carp3 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">56pts</span></td>           
+                </tr>
+                <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/961794258040410122/unknown.png?width=1189&height=669" target="_blank">10ª edição</a></th>
+                <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">67pts</span></td>
+                <td class="p2"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp2 Caterham">Caterham</span> <span class="nekomoript spanpts">62pts</span></td>
+                <td class="p3"><img src="img/bot.png" alt="">Bot <span class="carp3 Lotus">Lotus</span> <span class="spanpts">56pts</span></td>           
+                <td class="hidden1">Gunner <span class="McLaren">McLaren</span> <span class="gunnerpt spanpts">52pts</span></td>
+                <tr>
+                
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/962186431239966720/unknown.png?width=1189&height=669" target="_blank">11ª edição</a></th>
+                <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 Caterham">Caterham</span> <span class="gunnerpt spanpts">89pts</span></td>
+                <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">83pts</span></td>
+                <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Caterham">Caterham</span> <span class="nekomoript spanpts">82pts</span></td>           
+            </tr>
+            <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/962792695057760316/unknown.png?width=1189&height=669" target="_blank">12ª edição</a></th>
+                <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">185pts</span></td>
+                <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 McLaren">McLaren</span> <span class="gunnerpt spanpts">175pts</span></td>
+                <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Caterham">Caterham</span> <span class="nekomoript spanpts">136pts</span></td>           
+            </tr>
+            <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/962801151147905104/unknown.png?width=1189&height=669" target="_blank">13ª edição</a></th>
+                <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="nekomoript spanpts">68pts</span></td>
+                <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">58pts</span></td>
+                <td class="p3"><img src="img/Gunner.png" alt="">Gunner <span class="carp3 Ferrari">Ferrari</span> <span class="gunnerpt spanpts">45pts</span></td>           
+            </tr>
+            <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/964678823541080114/unknown.png?width=1189&height=669" target="_blank">14ª edição</a></th>
+                <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">80pts</span></td>
+                <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 McLaren">McLaren</span> <span class="gunnerpt spanpts">73pts</span></td>
+                <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Marussia">Marussia</span> <span class="nekomoript spanpts">62pts</span></td>           
+            </tr>
+            <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/964694639477129256/unknown.png?width=1189&height=669" target="_blank">15ª edição</a></th>
+                <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 McLaren">McLaren</span> <span class="gunnerpt spanpts">122pts</span></td>
+                <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">70pts</span></td>
+                <td class="p3"><img src="img/bot.png" alt="">Bot <span class="carp3 Mercedes">Mercedes</span> <span class="spanpts">68pts</span></td>     
+                <td class="hidden1">Nekomori <span class="Williams">Williams</span> <span class="nekomoript spanpts">64pts</span></td>
+            
+            </tr>
+            <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1000526633964408862/unknown.png?width=1189&height=669" target="_blank">16ª edição</a></th>
+                <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Satsu">Satsu</span> <span class="nekomoript spanpts">88pts</span></td>
+                <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 McLaren">McLaren</span> <span class="gunnerpt spanpts">73pts</span></td>
+                <td class="p3"><img src="img/Sliink.png" alt="">Sliink <span class="carp3 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">63pts</span></td>           
+            </tr>
+            <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1000533308918206464/unknown.png?width=1189&height=669" target="_blank">17ª edição</a></th>
+                <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 ToroRosso">Toro Rosso</span> <span class="gunnerpt spanpts">65pts</span></td>
+                <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">58pts</span></td>
+                <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Caterham">Caterham</span> <span class="nekomoript spanpts">51pts</span></td>           
+            </tr>
+            <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1000573734937182298/unknown.png?width=1189&height=669" target="_blank">18ª edição</a></th>
+                <td class="p1"><img src="img/bot.png" alt="">Bot <span class="carp1 Williams">Williams</span> <span class="spanpts">70pts</span></td>
+                <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Mercedes">Mercedes</span> <span class="sliinkpt spanpts">45pts</span></td>
+                <td class="p3"><img src="img/bot.png" alt="">Bot <span class="carp3 Marussia">Marussia</span> <span class="spanpts">45pts</span></td>    
+                <td class="hidden1">Gunner <span class="McLaren">McLaren</span> <span class="gunnerpt spanpts">41pts</span></td>
+                <td class="hidden2">Nekomori <span class="Caterham">Caterham</span> <span class="nekomoript spanpts">39pts</span></td>       
+            </tr>
+            <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1000581032560570439/unknown.png?width=1189&height=669" target="_blank">19ª edição</a></th>
+                <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 Lotus">Lotus</span> <span class="sliinkpt spanpts">85pts</span></td>
+                <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 McLaren">McLaren</span> <span class="gunnerpt spanpts">81pts</span></td>
+                <td class="p3"><img src="img/bot.png" alt="">Bot <span class="carp3 Williams">Williams</span> <span class="spanpts">67pts</span></td>       
+                <td class="hidden1">Nekomori <span class="Caterham">Caterham</span> <span class="nekomoript spanpts">43pts</span></td>    
+            </tr>
+            <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1000923716856856606/unknown.png?width=1189&height=669" target="_blank">20ª edição</a></th>
+                <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 McLaren">McLaren</span> <span class="gunnerpt spanpts">120pts</span></td>
+                <td class="p2"><img src="img/bot.png" alt="">Bot <span class="carp2 HRT">HRT</span> <span class="spanpts">105pts</span></td>
+                <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Caterham">Caterham</span> <span class="nekomoript spanpts">92pts</span></td>      
+                <td class="hidden1">Sliink <span class="Ferrari">Ferrari</span> <span class="sliinkpt spanpts">81pts</span></td>     
+            </tr>
+            <tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/1003029146567450644/1071722687749173258/image.png" target="_blank">21ª edição</a></th>
+            <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 Ferrari">Ferrari</span> <span class="dif sliinkpt">26pts</span></td>
+            <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 McLaren">McLaren</span> <span class="dif gunnerpt">14pts</span></td>
+            <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Caterham">Caterham</span> <span class="dif nekomoript">12pts</span></td>
+            </tr>
+            <tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/1003386945780580423/1071573074840911943/image.png" target="_blank">22ª edição</a></th>
+            <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="dif nekomoript">7pts</span></td>
+            <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Ferrari">Ferrari</span> <span class="dif sliinkpt">6pts</span></td>
+            <td class="p3"><img src="img/Gunner.png" alt="">Gunner <span class="carp3 Caterham">Caterham</span> <span class="dif gunnerpt">6pts</span></td>
+            </tr><tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/1003386945780580423/1071573476214837258/image.png" target="_blank">23ª edição</a></th>
+            <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="dif nekomoript">8pts</span></td>
+            <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 Caterham">Caterham</span> <span class="dif gunnerpt">5pts</span></td>
+            <td class="p3"><img src="img/Sliink.png" alt="">Sliink <span class="carp3 Sauber">Sauber</span> <span class="dif sliinkpt">5pts</span></td>
+            </tr><tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/1007080878922543105/1071573804440096819/image.png" target="_blank">24ª edição</a></th>
+            <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="dif nekomoript">7pts</span></td>
+            <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 RedBull">Red Bull</span> <span class="dif gunnerpt">6pts</span></td>
+            <td class="p3"><img src="img/Sliink.png" alt="">Sliink <span class="carp3 Ferrari">Ferrari</span> <span class="dif sliinkpt">4pts</span></td>
+            </tr><tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/1008075422002597908/1071574066080776282/image.png" target="_blank">25ª edição</a></th>
+            <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="dif nekomoript">7pts</span></td>
+            <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Ferrari">Ferrari</span> <span class="dif sliinkpt">5pts</span></td>
+            <td class="p3"><img src="img/Gunner.png" alt="">Gunner <span class="carp3 Caterham">Caterham</span> <span class="dif gunnerpt">4pts</span></td>
+            </tr><tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/1009589258790641755/1071574327562096740/image.png" target="_blank">26ª edição</a></th>
+            <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="dif nekomoript">7pts</span></td>
+            <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 Caterham">Caterham</span> <span class="dif gunnerpt">5pts</span></td>
+            <td class="p3"><img src="img/Sliink.png" alt="">Sliink <span class="carp3 Ferrari">Ferrari</span> <span class="dif sliinkpt">4pts</span></td>
+            </tr><tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/1009599360612434060/1071574717573636106/image.png" target="_blank">27ª edição</a></th>
+            <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="dif nekomoript">9pts</span></td>
+            <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Ferrari">Ferrari</span> <span class="dif sliinkpt">6pts</span></td>
+            <td class="p3"><img src="img/Gunner.png" alt="">Gunner <span class="carp3 Caterham">Caterham</span> <span class="dif gunnerpt">3pts</span></td>
+            </tr><tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/1010710379292278906/1071575020066852875/image.png" target="_blank">28ª edição</a></th>
+            <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 Caterham">Caterham</span> <span class="dif gunnerpt">7pts</span></td>
+            <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Lotus">Lotus</span> <span class="dif sliinkpt">6pts</span></td>
+            <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Caterham">Caterham</span> <span class="dif nekomoript">5pts</span></td>
+            </tr><tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1011803444643889213/unknown.png?width=1189&height=669" target="_blank">29ª edição</a></th>
+            <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="nekomoript spanpts">58pts</span></td>
+            <td class="p2"><img src="img/bot.png" alt="">Bot <span class="carp2 Sauber">Sauber</span> <span class="spanpts">53pts</span></td>
+            <td class="p3"><img src="img/Gunner.png" alt="">Gunner <span class="carp3 McLaren">McLaren</span> <span class="gunnerpt spanpts">35pts</span></td>
+            <td class="hidden1">Sliink <span class="Lotus">Lotus</span> <span class="sliinkpt spanpts">19pts</span></td>
+            </tr>
+            <tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1016088965419384942/unknown.png?width=1189&height=669" target="_blank">30ª edição</a></th>
+            <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 McLaren">McLaren</span> <span class="sliinkpt spanpts">58pts</span></td>
+            <td class="p2"><img src="img/bot.png" alt="">Bot <span class="carp2 ForceIndia">Force India</span> <span class="spanpts">47pts</span></td>
+            <td class="p3"><img src="img/Gunner.png" alt="">Gunner <span class="carp3 McLaren">McLaren</span> <span class="gunnerpt spanpts">42pts</span></td>
+            <td class="hidden1">Nekomori <span class="Caterham">Caterham</span> <span class="nekomoript spanpts">31pts</span></td>
+            </tr>
+            <tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1070493705993195661/image.png?width=1189&height=669" target="_blank">31ª edição</a></th>
+            <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 Lotus">Lotus</span> <span class="sliinkpt spanpts">94pts</span></td>
+            <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 Caterham">Caterham</span> <span class="gunnerpt spanpts">88pts</span></td>
+            <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Caterham">Caterham</span> <span class="nekomoript spanpts">73pts</span></td>
+            </tr>
+            <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1071831730966757456/image.png?width=1189&height=669" target="_blank">32ª edição</a></th>
+                <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="nekomoript spanpts">91pts</span></td>
+                <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 Lotus">Lotus</span> <span class="sliinkpt spanpts">81pts</span></td>
+                <td class="p3"><img src="img/Gunner.png" alt="">Gunner <span class="carp3 McLaren">McLaren</span> <span class="gunnerpt spanpts">60pts</span></td>
+                </tr>
+                <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1071841054778724402/image.png?width=1189&height=669" target="_blank">33ª edição</a></th>
+                <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">103pts</span></td>
+                <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 RedBull">Red Bull</span> <span class="gunnerpt spanpts">94pts</span></td>
+                <td class="p3"><img src="img/bot.png" alt="">Bot <span class="carp3 Williams">Williams</span> <span class="spanpts">69pts</span></td>
+                <td class="hidden1">Nekomori <span class="Caterham">Caterham</span> <span class="nekomoript spanpts">62pts</span></td>
+                </tr>
+            <tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1073378654618398820/image.png?width=1189&height=669" target="_blank">34ª edição</a></th>
+            <td class="p1"><img src="img/Sliink.png" alt="">Sliink <span class="carp1 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">98pts</span></td>
+            <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 RedBull">Red Bull</span> <span class="gunnerpt spanpts">92pts</span></td>
+            <td class="p3"><img src="img/bot.png" alt="">Bot <span class="carp3 HRT">HRT</span> <span class="spanpts">85pts</span></td>
+            <td class="hidden1"><img src="img/Nekomori.png" alt="">Nekomori <span class="HRT">HRT</span> <span class="nekomoript spanpts">69pts</span></td>
+            </tr>
+            <tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1073384160518996150/image.png?width=1189&height=669" target="_blank">35ª edição</a></th>
+            <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="nekomoript spanpts">59pts</span></td>
+            <td class="p2"><img src="img/bot.png" alt="">Bot <span class="carp2 Satsu">Satsu</span> <span class="spanpts">53pts</span></td>
+            <td class="p3"><img src="img/Sliink.png" alt="">Sliink <span class="carp3 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">46pts</span></td>
+            <td class="hidden1"><img src="img/Gunner.png" alt="">Gunner <span class="McLaren">McLaren</span> <span class="gunnerpt spanpts">40pts</span></td>
+            </tr>
+            <tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1073389776968888401/image.png?width=1189&height=669" target="_blank">36ª edição</a></th>
+            <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 McLaren">McLaren</span> <span class="gunnerpt spanpts">70pts</span></td>
+            <td class="p2"><img src="img/Sliink.png" alt="">Sliink <span class="carp2 McLaren">McLaren</span> <span class="sliinkpt spanpts">63pts</span></td>
+            <td class="p3"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp3 Caterham">Caterham</span> <span class="nekomoript spanpts">58pts</span></td>
+            </tr>
+            
+            <tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1074127435806810173/image.png?width=1189&height=669" target="_blank">37ª edição</a></th>
+            <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="nekomoript spanpts">106pts</span></td>
+            <td class="p2"><img src="img/bot.png" alt="">bot <span class="carp2 Williams">Williams</span> <span class="botpt spanpts">79pts</span></td>
+            <td class="p3"><img src="img/Gunner.png" alt="">Gunner <span class="carp3 RedBull">Red Bull</span> <span class="gunnerpt spanpts">76pts</span></td>
+            <td class="hidden1"><img src="img/Sliink.png" alt="">Sliink <span class=" Ferrari">Ferrari</span> <span class="sliinkpt spanpts">74pts</span></td>
+            <td class="hidden2"><img src="img/.png" alt=""> <span class=" "></span> <span class="pt spanpts">pts</span></td>
+            </tr>
+
+            <tr>
+            <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1074136914225020938/image.png?width=1210&height=669" target="_blank">38ª edição</a></th>
+            <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 RedBull">Red Bull</span> <span class="gunnerpt spanpts">98pts</span></td>
+            <td class="p2"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp2 Caterham">Caterham</span> <span class="nekomoript spanpts">96pts</span></td>
+            <td class="p3"><img src="img/bot.png" alt="">Bot <span class="carp3 HRT">HRT</span> <span class="botpt spanpts">64pts</span></td>
+            <td class="hidden1"><img src="img/Sliink.png" alt="">Sliink <span class=" Ferrari">Ferrari</span> <span class="sliinkpt spanpts">62pts</span></td>
+            <td class="hidden2"><img src="img/.png" alt=""> <span class=" "></span> <span class="pt spanpts">pts</span></td>
+            </tr>
+            <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1075543970794438676/image.png?width=1189&height=669" target="_blank">39ª edição</a></th>
+                <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 RedBull">Red Bull</span> <span class="gunnerpt spanpts">103pts</span></td>
+                <td class="p2"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp2 Caterham">Caterham</span> <span class="nekomoript spanpts">102pts</span></td>
+                <td class="p3"><img src="img/Sliink.png" alt="">Sliink <span class="carp3 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">101pts</span></td>
+                <td class="hidden1"><img src="img/.png" alt=""> <span class=" "></span> <span class="pt spanpts">pts</span></td>
+                <td class="hidden2"><img src="img/.png" alt=""> <span class=" "></span> <span class="pt spanpts">pts</span></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1075927885749166142/image.png?width=1189&height=669" target="_blank">40ª edição</a></th>
+                    <td class="p1"><img src="img/Gunner.png" alt="">Gunner <span class="carp1 RedBull">Red Bull</span> <span class="gunnerpt spanpts">123pts</span></td>
+                    <td class="p2"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp2 Caterham">Caterham</span> <span class="nekomoript spanpts">83pts</span></td>
+                    <td class="p3"><img src="img/Sliink.png" alt="">Sliink <span class="carp3 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">70pts</span></td>
+                    <td class="hidden1"><img src="img/.png" alt=""> <span class=" "></span> <span class="pt spanpts">pts</span></td>
+                    <td class="hidden2"><img src="img/.png" alt=""> <span class=" "></span> <span class="pt spanpts">pts</span></td>
+                    </tr>
+                    <tr>
+                <th scope="row" class="edition"><a href="https://media.discordapp.net/attachments/960263390222229545/1076879761734893608/image.png?width=1184&height=666" target="_blank">41ª edição</a></th>
+                <td class="p1"><img src="img/Nekomori.png" alt="">Nekomori <span class="carp1 Caterham">Caterham</span> <span class="nekomoript spanpts">116pts</span></td>
+                <td class="p2"><img src="img/Gunner.png" alt="">Gunner <span class="carp2 RedBull">Red Bull</span> <span class="gunnerpt spanpts">112pts</span></td>
+                <td class="p3"><img src="img/Sliink.png" alt="">Sliink <span class="carp3 Ferrari">Ferrari</span> <span class="sliinkpt spanpts">106pts</span></td>
+                <td class="hidden1"><img src="img/.png" alt=""> <span class=" "></span> <span class="pt spanpts">pts</span></td>
+                <td class="hidden2"><img src="img/.png" alt=""> <span class=" "></span> <span class="pt spanpts">pts</span></td>
+                </tr>
+        
+            </tbody>
+        </div>
+        
+            </table> 
+
+            <a href="index.html"><div id="voltar">Voltar</div></a>
+    
+            
+    <script src="stats.js"></script>
+</body>
+</html>
