@@ -12,6 +12,8 @@
 
 body {
     background-image: linear-gradient(to right, var(--cor0), var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+	background-repeat: black no-repeat;
+ 	background-size: cover;
     color: white;
     width:100%;
     margin: auto;
