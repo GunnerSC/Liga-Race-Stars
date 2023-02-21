@@ -14,7 +14,8 @@
 }
 
 body {
-    background-image:url(img/backgroundfull.jpg);
+    background: black url(img/backgroundfull.jpg) center top no-repeat fixed;
+    background-size: cover;
     color: white;
     width:1000px;
     margin: auto;

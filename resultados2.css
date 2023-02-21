@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+:root {
+    --cor4:#7B44F2;
+    --cor3:#6B71F2;
+    --cor2:#3DADF2;
+    --cor1:#13DCF2;
+    --cor0:#0CF2F2;
+    --text:#000000d4;
+
+
+}
+
+
+body {
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    color: white;
+    width:100%;
+    margin: auto;
+    font-variant: small-caps;
+    overflow-x: auto;
+    
+}
+
+header {
+    background: url(img/background.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+button {
+    border-radius: 50px;
+}
+
+menu {
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    padding: 0px;
+    margin-top: 40px;
+}
+
+#mainmenu {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+
+
+menu > a {
+    display: inline-block;
+    color: var(--text);
+    background: white;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    height: 1.5em;
+    width: 8em; 
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.menu > a:hover {
+    color: gold;
+}
+h1, h2, #voltar {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: bolder;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0d589e;
+}
+
+
+#logo {
+    text-align: center;
+    margin: 50px;
+    margin-top: 50px;
+}
+
+#title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 65px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, input:hover {
+    color: var(--cor3);
+}
+
+table {
+    margin: auto;
+    background-color: white;
+    width: 800px;;
+    border-collapse: collapse;
+    border: 1px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--text);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+
+th {
+    padding: 5px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+td {
+    padding: 5px;
+    padding-left: 20px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.476);
+    font-variant: normal;
+}
+
+.edition {
+    padding: 0px;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 12px;
+}
+
+img {
+    padding-right: 10px;
+}
+
+#voltar {
+    text-align: center;
+}
+#voltar > p > a {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    font-size: 30px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0d589e;
+}
+
+.car {
+    width: 70px;
+}
+
+span {
+    /* display: none;*/
+     font-size: 14px;
+ }
+ .spanpts {
+     color: indigo;
+     font-size: 14px;
+ }
+ 
+ span.dif {
+     color: rgb(222, 64, 243);
+ }
+ 
+ span.Mercedes {
+     font-variant: small-caps;
+     color: cyan;
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.Caterham {
+     font-variant: small-caps;
+     color: rgb(0, 139, 0);
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.Ferrari {
+     font-variant: small-caps;
+     color: red;
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.RedBull {
+     font-variant: small-caps;
+     color: blue;
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.Satsu {
+     font-variant: small-caps;
+     color: rgb(235, 2, 235);
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.ToroRosso {
+     font-variant: small-caps;
+     color: rgb(2, 60, 234);
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.Williams {
+     font-variant: small-caps;
+     color: rgb(66, 120, 246);
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.Lotus {
+     font-variant: small-caps;
+     color: yellow;
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.Sauber {
+     font-variant: small-caps;
+     color: rgb(198, 76, 76);
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.McLaren {
+     font-variant: small-caps;
+     color: orange;
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.ForceIndia {
+     font-variant: small-caps;
+     color: orange;
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.HRT {
+     font-variant: small-caps;
+     color: sienna;
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ span.Marussia {
+     font-variant: small-caps;
+     color: rgba(82, 82, 82, 0.698);
+     text-shadow: 0.5px 0.5px 0.5px black;
+ 
+ }
+ 
+ span.TecNova {
+     font-variant: small-caps;
+     color: rgb(235, 2, 235);
+     text-shadow: 0.5px 0.5px 0.5px black;
+ }
+ 
+ .hidden1, .hidden2, .hidden3 {
+     display: none;
+ }
+ 

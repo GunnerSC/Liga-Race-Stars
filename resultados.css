@@ -25,9 +25,16 @@ body {
 }
 
 header {
-    background-image: url(img/background.jpg);
+    background: url(img/background.jpg) no-repeat;
+    background-size: cover;
     width: 100%;
     margin-bottom: 50px;
+}
+
+button {
+    border-radius: 50px;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
+    color: white;
 }
 
 
@@ -109,7 +116,7 @@ a:hover, input:hover {
 table {
     margin: auto;
     background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
-    width: 800px;;
+    width: 800px;
     border-collapse: collapse;
     border: 1px solid rgba(255, 255, 255, 0.496);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -119,32 +126,7 @@ table {
     margin-bottom: 50px;
 }
 
-table.tabletitle {
-    margin-left: 200px;
-    margin-right: 200px;
-    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
-    width: 600px;
-    border-collapse: collapse;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 50px;
-}
 
-.tptitle {
-    text-align: center;
-    margin: 0px;
-    padding-left: 0px;
-    font-size: 20px;
-}
-
-table#construtor {
-    width: 400px;
-    margin-left: 300px;
-    margin-right: 300px;
-    font-size: 20px;
-}
 
 th {
     padding: 5px;
@@ -160,40 +142,12 @@ td {
     font-variant: normal;
 }
 
-.tdtitle {
-    padding: 5px;
-    padding-left: 20px;
-    height: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.496);
-    font-variant: normal;
-    font-size: 20px;
-}
-
-.tablepts {
-    width: 400px;
-    margin-left: 300px;
-    margin-right: 300px;
-    font-size: 20px;
-}
-
-.consttittle {
-    font-size: 20px;
-    width: 20px;
-}
-
-.teamrank {
-    font-size: 20px;
-    width: 35px;
-    padding-left: 20px;
-}
-
-
-
 
 .edition {
     padding: 0px;
     font-variant: small-caps;
     text-align: center;
+    font-size: 12px;
 }
 
 img {

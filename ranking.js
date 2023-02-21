@@ -213,13 +213,22 @@ tableRows.forEach(function(row) {
 
     let Caterham = { nome: 'Caterham', p1: caterhamp1, p2: caterhamp2, p3: caterhamp3, podium: caterhamp1+caterhamp2+caterhamp3}
 
-   
+    document.getElementById("myButton").addEventListener("click", function(){
+        var stylesheet = document.getElementById("myStylesheet");
+        if (stylesheet.getAttribute("href") == "ranking.css") {
+          stylesheet.href = "ranking2.css";
+        } else {
+          stylesheet.href = "ranking.css";  
+        }
+      });
+    
 
 function ranking() {
 
 res.innerHTML = `
 <body id=res>
 <header>
+<button id="myButton">Dark/Light</button>
 <h1><a href="index.html"><img src="img/logom.png" alt=""></a></h1>
 <menu id="mainmenu">
     <a class="menu" href="index.html">Home</a>
@@ -384,14 +393,6 @@ for (i = 1; i < rows.length; i++) {
   rows[i].getElementsByClassName("dvrankpos")[0].innerHTML = positions[i - 1];
 }
 
-
-
-
-
-
-
-
-
 var table2, rows2, switching2, j, a, b, shouldSwitch2, positions2;
 table2 = document.querySelector(".tabletitle2");
 switching2 = true;
@@ -429,6 +430,22 @@ for (j = 1; j < rows2.length; j++) {
 rows2[j].getElementsByClassName("teamrank")[0].innerHTML = positions2[j - 1];
 }
 
+
+document.getElementById("myButton").addEventListener("click", function(){
+    var stylesheet = document.getElementById("myStylesheet");
+    if (stylesheet.getAttribute("href") == "ranking.css") {
+      stylesheet.href = "ranking2.css";
+    } else {
+      stylesheet.href = "ranking.css";  
+    }
+  });
+
+
+
+
 }
+
+
+  
 
 

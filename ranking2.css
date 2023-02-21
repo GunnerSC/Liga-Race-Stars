@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 :root {
-    --cor0:#2D2545;
-    --cor1:#1D1634;
-    --cor2:#110B23;
-    --cor3:#080414;
-    --cor4:#020108;
+    --cor4:#7B44F2;
+    --cor3:#6B71F2;
+    --cor2:#3DADF2;
+    --cor1:#13DCF2;
+    --cor0:#0CF2F2;
+    --text:#000000d4;
 
 
-    --cor5:#453E5C;
-    --cor6:#29233C;
-    --cor7:#1C1631;
-    --cor8:#110B23;
 }
 
 body {
-    background-image: linear-gradient(to left, #18102A, #0D071A, #05020E,#010004);
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1), var(--cor2), var(--cor3), var(--cor4));
     color: white;
     width:100%;
     margin: auto;
@@ -30,12 +27,10 @@ header {
     margin-bottom: 50px;
 }
 
+
 button {
     border-radius: 50px;
-    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
-    color: white;
 }
-
 
 menu {
     width: 800px;
@@ -46,18 +41,21 @@ menu {
 }
 
 #mainmenu {
-    background-image: linear-gradient(to left, #18102A, #0D071A, #05020E,#010004);
-    border: 1px solid white;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    border: 1px solid black;
     border-left: none;
     border-right: none;
     width: 100%;
 }
 
+.menu > a:hover {
+    color: gold;
+}
 
 menu > a {
     display: inline-block;
-    color: white;
-    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
+    color: var(--text);
+    background: white;
     font-family: 'Luckiest Guy', cursive;
     font-weight: lighter;
     font-size: 25px;
@@ -67,7 +65,7 @@ menu > a {
     text-align: center;
     height: 1.5em;
     width: 8em; 
-    border: 1px solid rgba(255, 255, 255, 0.496);
+    border: 1px solid black;
     border-collapse: collapse;
 }
 
@@ -104,22 +102,23 @@ h1, h2, #voltar {
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 a:hover, input:hover {
-    color: gold;
+    color: var(--cor3);
 }
+
 
 table {
     margin: auto;
-    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
+    background-color: white;
     width: 600px;
     border-collapse: collapse;
     border: 1px solid rgba(255, 255, 255, 0.496);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    color: var(--text);
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 50px;
@@ -127,11 +126,11 @@ table {
 
 table.tabletitle {
     margin: auto;
-    background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
+    background-color: white;
     width: 600px;
     border-collapse: collapse;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    color: var(--text);
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 50px;
@@ -153,25 +152,18 @@ table#construtor {
 th {
     padding: 5px;
     height: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.496);
+    border: 1px solid rgba(0, 0, 0, 0.476);
 }
 
 td {
     padding: 5px;
     padding-left: 20px;
     height: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.496);
+    border: 1px solid rgba(0, 0, 0, 0.476);
     font-variant: normal;
 }
 
-.tdtitle {
-    padding: 5px;
-    padding-left: 20px;
-    height: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.496);
-    font-variant: normal;
-    font-size: 20px;
-}
+
 
 .tablepts {
     width: 400px;
@@ -228,184 +220,96 @@ span {
    /* display: none;*/
     font-size: 12px;
 }
-.spanpts {
-    color: greenyellow;
-}
+
 span.spantitle {
     margin-left: 10px;
     font-size: 18px;
-    color: white;
-}
-
-span.dif {
-    color: rgb(64, 192, 243);
-}
-
-span.Mercedes {
-    font-variant: small-caps;
-    color: cyan
-}
-
-span.Caterham {
-    font-variant: small-caps;
-    color: rgb(17, 245, 17);
-}
-
-span.Ferrari {
-    font-variant: small-caps;
-    color: rgb(255, 54, 54);
-}
-
-span.RedBull {
-    font-variant: small-caps;
-    color: rgb(64, 192, 243);
-}
-
-span.Satsu {
-    font-variant: small-caps;
-    color: rgb(235, 2, 235);
-}
-
-span.ToroRosso {
-    font-variant: small-caps;
-    color: rgb(2, 60, 234);
-}
-
-span.Williams {
-    font-variant: small-caps;
-    color: rgb(66, 120, 246);
-}
-
-span.Lotus {
-    font-variant: small-caps;
-    color: yellow;
-}
-
-span.Sauber {
-    font-variant: small-caps;
-    color: rgb(97, 5, 5);
-}
-
-span.McLaren {
-    font-variant: small-caps;
-    color: rgb(254, 157, 31);
-}
-
-span.ForceIndia {
-    font-variant: small-caps;
-    color: rgb(255, 204, 0);
-}
-
-span.HRT {
-    font-variant: small-caps;
-    color: sienna;
-}
-
-span.Marussia {
-    font-variant: small-caps;
-    color: rgba(82, 82, 82, 0.698);
-
-}
-
-span.TecNova {
-    font-variant: small-caps;
-    color: rgb(235, 2, 235);
-}
-
-.hidden1, .hidden2, .hidden3 {
-    display: none;
-}
-
-
-.tp {
-    text-align: center;
-    margin: 0px;
-    padding-left: 0px;
+    color: var(--text);
 }
 
 span#Mercedes {
-    font-size: 18px;
     font-variant: small-caps;
-    color: cyan
+    color: cyan;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#Caterham {
-    font-size: 18px;
     font-variant: small-caps;
-    color: rgb(17, 245, 17);
+    color: rgb(0, 139, 0);
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#Ferrari {
-    font-size: 18px;
     font-variant: small-caps;
-    color: rgb(255, 54, 54);
+    color: red;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#RedBull {
-    font-size: 18px;
     font-variant: small-caps;
-    color: rgb(64, 192, 243);
+    color: blue;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#Satsu {
-    font-size: 18px;
     font-variant: small-caps;
     color: rgb(235, 2, 235);
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#ToroRosso {
-    font-size: 18px;
     font-variant: small-caps;
     color: rgb(2, 60, 234);
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#Williams {
-    font-size: 18px;
     font-variant: small-caps;
     color: rgb(66, 120, 246);
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#Lotus {
-    font-size: 18px;
     font-variant: small-caps;
     color: yellow;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#Sauber {
-    font-size: 18px;
     font-variant: small-caps;
-    color: rgb(97, 5, 5);
+    color: rgb(198, 76, 76);
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#McLaren {
-    font-size: 18px;
     font-variant: small-caps;
-    color: rgb(254, 157, 31);
+    color: orange;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#ForceIndia {
-    font-size: 18px;
     font-variant: small-caps;
-    color: rgb(255, 204, 0);
+    color: orange;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#HRT {
-    font-size: 18px;
     font-variant: small-caps;
     color: sienna;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 span#Marussia {
-    font-size: 18px;
     font-variant: small-caps;
     color: rgba(82, 82, 82, 0.698);
+    text-shadow: 0.5px 0.5px 0.5px black;
 
 }
 
 span#TecNova {
-    font-size: 18px;
     font-variant: small-caps;
     color: rgb(235, 2, 235);
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 
