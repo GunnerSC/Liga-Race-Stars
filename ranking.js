@@ -351,7 +351,6 @@ res.innerHTML = `
         </tr>
         </tbody>
     </table>
-    <a href="index.html"><div id="voltar">Voltar</div></a>
 
 </body>
 </html>`

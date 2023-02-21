@@ -219,6 +219,7 @@ function stats() {
     res.innerHTML = `
     <body>
     <header>
+    <button id="myButton">Dark/Light</button>
     <h1><a href="index.html"><img src="img/logom.png" alt=""></a></h1>
     <menu id="mainmenu">
         <a class="menu" href="index.html">Home</a>
@@ -237,7 +238,7 @@ function stats() {
     <img class="podium" src="img/podium.png" alt=""> ${Gunner.podium} vezes no pódio
     <br>
     Pontos: ${Gunner.pontos}<br>
-    Carro mais usado: <span id="McLaren">McLaren</span></p>
+    Carro mais usado: <span class="McLaren">McLaren</span></p>
     
     </p>
     </div>
@@ -250,7 +251,7 @@ function stats() {
     <img class="podium" src="img/podium.png" alt=""> ${Sliink.podium} vezes no pódio
     <br>
     Pontos: ${Sliink.pontos} <br>
-    Carro mais usado: <span id="Ferrari">Ferrari</span>
+    Carro mais usado: <span class="Ferrari">Ferrari</span>
     </div>
         <div class="statsplayer"><h1>Nekomori</h1>
             <img src="img/nekomori89.png" alt="">
@@ -261,12 +262,23 @@ function stats() {
     <img class="podium" src="img/podium.png" alt=""> ${Nekomori.podium} vezes no pódio
     <br>
     Pontos: ${Nekomori.pontos} <br>
-    Carro mais usado: <span id="Caterham">Caterham</span></p>
+    Carro mais usado: <span class="Caterham">Caterham</span></p>
     
     </p>
     </div>
-    <a href="index.html"><div id="voltar">Voltar</div></a>
+
 </body>
     `
+
+    document.getElementById("myButton").addEventListener("click", function(){
+        var stylesheet = document.getElementById("myStylesheet");
+        if (stylesheet.getAttribute("href") == "stats.css") {
+          stylesheet.href = "stats2.css";
+        } else {
+          stylesheet.href = "stats.css";
+        }
+      });
+    
+      
 }
 
