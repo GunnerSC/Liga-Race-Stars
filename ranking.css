@@ -15,7 +15,7 @@
 
 body {
     background-image: linear-gradient(to left, #18102A, #0D071A, #05020E,#010004);
-    background-repeat: black no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     color: white;
     width:100%;
@@ -75,6 +75,10 @@ menu > a {
 
 .menu > a:hover {
     color: gold;
+}
+
+#hiddenres {
+    display: none;
 }
 
 h1, h2, #voltar {

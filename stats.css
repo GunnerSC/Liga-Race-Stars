@@ -69,6 +69,11 @@ menu > a {
 .menu > a:hover {
     color: gold;
 }
+
+#hiddenres {
+    display: none;
+}
+
 h1, h2, #voltar {
     font-family: 'Luckiest Guy', cursive;
     font-weight: bolder;
