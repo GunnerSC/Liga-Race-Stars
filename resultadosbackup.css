@@ -119,7 +119,7 @@ a:hover, input:hover {
 table {
     margin: auto;
     background-image: linear-gradient(to right, var(--cor5), var(--cor6), var(--cor7), var(--cor8));
-    width: 900px;
+    width: 800px;
     border-collapse: collapse;
     border: 1px solid rgba(255, 255, 255, 0.496);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

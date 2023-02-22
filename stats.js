@@ -1,7 +1,7 @@
    
    
    
-     let gunnerp1 = 0;       let gunnerp2 = 0;       let gunnerp3 = 0;
+    let gunnerp1 = 0;       let gunnerp2 = 0;       let gunnerp3 = 0;
 
     let sliinkp1 = 0;       let sliinkp2 = 0;       let sliinkp3 = 0;
 
@@ -213,6 +213,148 @@ tableRows.forEach(function(row) {
 
     let Caterham = { nome: 'Caterham', p1: caterhamp1, p2: caterhamp2, p3: caterhamp3, podium: caterhamp1+caterhamp2+caterhamp3}
 
+      
+  const resistencia1Rows = document.querySelectorAll('tr.resistencia1'); // seleciona todas as linhas com class "resistencia1"
+  const resistencia2Rows = document.querySelectorAll('tr.resistencia2'); 
+  const europa1Rows = document.querySelectorAll('tr.europa1'); 
+  const europa2Rows = document.querySelectorAll('tr.europa2'); 
+  const internacionalRows = document.querySelectorAll('tr.internacional'); 
+  const pacificoRows = document.querySelectorAll('tr.pacifico'); 
+  const espelho1Rows = document.querySelectorAll('tr.espelho1'); 
+  const espelho2Rows = document.querySelectorAll('tr.espelho2'); 
+  const personalizadoRows = document.querySelectorAll('tr.personalizado')
+
+  let gunnerresistencia1 = 0;
+  let gunnerresistencia2 = 0;
+  let gunnereuropa1 = 0;
+  let gunnereuropa2 = 0;
+  let gunnerinternacional = 0;
+  let gunnerpacifico = 0;
+  let gunnerespelho1 = 0;
+  let gunnerespelho2 = 0;
+  let gunnerpersonalizado = 0
+
+  let sliinkresistencia1 = 0; // contador de Sliinks
+  let sliinkresistencia2 = 0;
+  let sliinkeuropa1 = 0; 
+  let sliinkeuropa2 = 0;
+  let sliinkinternacional = 0;
+  let sliinkpacifico = 0;
+  let sliinkespelho1 = 0;
+  let sliinkespelho2 = 0;
+  let sliinkpersonalizado = 0;
+
+  let nekomoriresistencia1 = 0;
+  let nekomoriresistencia2 = 0;
+  let nekomorieuropa1 = 0;
+  let nekomorieuropa2 = 0;
+  let nekomoriinternacional =0;
+  let nekomoripacifico = 0;
+  let nekomoriespelho1 = 0;
+  let nekomoriespelho2 = 0;
+  let nekomoripersonalizado = 0;
+  
+  resistencia1Rows.forEach(row => {
+    const p1 = row.querySelector('td.p1'); // seleciona a primeira coluna da linha atual
+    if (p1.textContent.includes('Sliink')) { // verifica se o texto da coluna contém "Sliink"
+      sliinkresistencia1++; // incrementa o contador de Sliinks
+    } else if (p1.textContent.includes('Gunner')) {
+      gunnerresistencia1++;
+    } else if (p1.textContent.includes('Nekomori')) {
+      nekomoriresistencia1++;
+    }
+
+  });
+
+  resistencia2Rows.forEach(row => {
+    const p1 = row.querySelector('td.p1'); // seleciona a primeira coluna da linha atual
+    if (p1.textContent.includes('Sliink')) { // verifica se o texto da coluna contém "Sliink"
+      sliinkresistencia2++; // incrementa o contador de Sliinks
+    } else if (p1.textContent.includes('Gunner')) {
+      gunnerresistencia2++;
+    } else if (p1.textContent.includes('Nekomori')) {
+      nekomoriresistencia2++;
+    }
+  });
+
+  europa1Rows.forEach(row => {
+    const p1 = row.querySelector('td.p1'); 
+    if (p1.textContent.includes('Sliink')) { 
+      sliinkeuropa1++; 
+    } else if (p1.textContent.includes('Gunner')) {
+      gunnereuropa1++;
+    } else if (p1.textContent.includes('Nekomori')) {
+      nekomorieuropa1++;
+    }
+  });
+
+  europa2Rows.forEach(row => {
+    const p1 = row.querySelector('td.p1'); 
+    if (p1.textContent.includes('Sliink')) {
+      sliinkeuropa2++; 
+    } else if (p1.textContent.includes('Gunner')) {
+      gunnereuropa2++;
+    } else if (p1.textContent.includes('Nekomori')) {
+      nekomorieuropa2++;
+    }
+  });
+
+  internacionalRows.forEach(row => {
+    const p1 = row.querySelector('td.p1');
+    if (p1.textContent.includes('Sliink')) {
+      sliinkinternacional++;
+    } else if (p1.textContent.includes('Gunner')) {
+      gunnerinternacional++;
+    } else if (p1.textContent.includes('Nekomori')) {
+      nekomoriinternacional++;
+    }
+  })
+
+  pacificoRows.forEach(row => {
+    const p1 = row.querySelector('td.p1');
+    if (p1.textContent.includes('Sliink')) {
+      sliinkpacifico++;
+    } else if (p1.textContent.includes('Gunner')) {
+      gunnerpacifico++;
+    } else if (p1.textContent.includes('Nekomori')) {
+      nekomoripacifico++;
+    }
+  })
+  
+  espelho1Rows.forEach(row => {
+    const p1 = row.querySelector('td.p1');
+    if (p1.textContent.includes('Sliink')) {
+      sliinkespelho1++;
+    } else if (p1.textContent.includes('Gunner')) {
+      gunnerespelho1++;
+    } else if (p1.textContent.includes('Nekomori')) {
+      nekomoriespelho1++;
+    }
+  })
+
+  espelho2Rows.forEach(row => {
+    const p1 = row.querySelector('td.p1');
+    if (p1.textContent.includes('Sliink')) {
+      sliinkespelho2++;
+    } else if (p1.textContent.includes('Gunner')) {
+      gunnerespelho2++;
+    } else if (p1.textContent.includes('Nekomori')) {
+      nekomoriespelho2++;
+    }
+    
+  })
+
+  personalizadoRows.forEach(row => {
+    const p1 = row.querySelector('td.p1');
+    if (p1.textContent.includes('Sliink')) {
+      sliinkpersonalizado++;
+    } else if (p1.textContent.includes('Gunner')) {
+      gunnerpersonalizado++;
+    } else if (p1.textContent.includes('Nekomori')) {
+      nekomoripersonalizado++;
+    }
+  })
+
    
 
 function stats() {
@@ -238,8 +380,18 @@ function stats() {
     <img class="podium" src="img/podium.png" alt=""> ${Gunner.podium} vezes no pódio
     <br>
     Pontos: ${Gunner.pontos}<br>
-    Carro mais usado: <span class="McLaren">McLaren</span></p>
-    
+    Carro mais usado: <span class="McLaren">McLaren</span><br> </p>
+    <h2>Campeonatos:</h2>
+    <p>
+    Resistência I:🏆 ${gunnerresistencia1}<br>
+    Resistência II:🏆 ${gunnerresistencia2}<br>
+    Europa I:🏆 ${gunnereuropa1}<br>
+    Europa II:🏆 ${gunnereuropa2}<br>
+    Espelho I:🏆 ${gunnerespelho1}<br>
+    Espelho II:🏆 ${gunnerespelho2}<br>
+    Internacional:🏆 ${gunnerinternacional}<br>
+    No Pacífico:🏆 ${gunnerpacifico}<br>
+    Personalizado:🏆 ${gunnerpersonalizado}<br>
     </p>
     </div>
         <div class="statsplayer"><h1>Sliink</h1>
@@ -251,7 +403,19 @@ function stats() {
     <img class="podium" src="img/podium.png" alt=""> ${Sliink.podium} vezes no pódio
     <br>
     Pontos: ${Sliink.pontos} <br>
-    Carro mais usado: <span class="Ferrari">Ferrari</span>
+    Carro mais usado: <span class="Ferrari">Ferrari</span></p>
+    <h2>Campeonatos:</h2>
+    <p>
+    Resistência I:🏆 ${sliinkresistencia1}<br>
+    Resistência II:🏆 ${sliinkresistencia2}<br>
+    Europa I:🏆 ${sliinkeuropa1}<br>
+    Europa II:🏆 ${sliinkeuropa2}<br>
+    Espelho I:🏆 ${sliinkespelho1}<br>
+    Espelho II:🏆 ${sliinkespelho2}<br>
+    Internacional:🏆 ${sliinkinternacional}<br>
+    No Pacífico:🏆 ${sliinkpacifico}<br>
+    Personalizado:🏆 ${sliinkpersonalizado}<br>
+    </p>
     </div>
         <div class="statsplayer"><h1>Nekomori</h1>
             <img src="img/nekomori89.png" alt="">
@@ -263,7 +427,17 @@ function stats() {
     <br>
     Pontos: ${Nekomori.pontos} <br>
     Carro mais usado: <span class="Caterham">Caterham</span></p>
-    
+    <h2>Campeonatos:</h2>
+    <p>
+    Resistência I:🏆 ${nekomoriresistencia1}<br>
+    Resistência II:🏆 ${nekomoriresistencia2}<br>
+    Europa I:🏆 ${nekomorieuropa1}<br>
+    Europa II:🏆 ${nekomorieuropa2}<br>
+    Espelho I:🏆 ${nekomoriespelho1}<br>
+    Espelho II:🏆 ${nekomoriespelho2}<br>
+    Internacional:🏆 ${nekomoriinternacional}<br>
+    No Pacífico:🏆 ${nekomoripacifico}<br>
+    Personalizado:🏆 ${nekomoripersonalizado}<br>
     </p>
     </div>
 
