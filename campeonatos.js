@@ -391,10 +391,12 @@ res.innerHTML = `
                     5 <img src="img/flag/ita.webp" alt="">Itália<br>
                     6 <img src="img/flag/ale.webp" alt="">Alemanha<br>
                     <h2>Maiores vencedores</h2>
-                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkresistencia1}<br>
-                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnerresistencia1}<br>
-                    <img src="img/Nekomori.png" alt=""> Nekomori    ${nekomoriresistencia1}<br>
-                </p>
+                    <table>
+                      <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkresistencia1}<br>
+                      <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerresistencia1}<br>
+                      <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoriresistencia1}<br>
+                                      </p>
+                    </table>
             </div>
             <div class="padrao">
                 <h1>Resistência II</h1>
@@ -412,8 +414,8 @@ res.innerHTML = `
                     10<img src="img/flag/jap.webp" alt="">Japão<br>
                     11 <img src="img/flag/mon.webp" alt="">Mônaco<br>
                     <h2 style="margin-top: 0px;">Maiores vencedores</h2>
-                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnerresistencia2}<br>
-                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkresistencia2}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerresistencia2}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkresistencia2}<br>
                 </p>
             </div>
             <div class="padrao">
@@ -424,9 +426,9 @@ res.innerHTML = `
                         2 <img src="img/flag/ale.webp" alt="">Alemanha<br>
                         3 <img src="img/flag/bel.webp" alt="">Bélgica<br>
                     <h2>Maiores vencedores</h2>
-                    <img src="img/Nekomori.png" alt=""> Nekomori    ${nekomorieuropa1}<br>
-                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnereuropa1}<br>
-                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkeuropa1}<br>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomorieuropa1}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnereuropa1}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkeuropa1}<br>
                 </p>
             </div>
             <div class="padrao">
@@ -439,9 +441,9 @@ res.innerHTML = `
                     4 <img src="img/flag/bel.webp" alt="">Bélgica<br>
                     5 <img src="img/flag/mon.webp" alt="">Mônaco<br>
                     <h2>Maiores vencedores</h2>
-                    <img src="img/Nekomori.png" alt=""> Nekomori    ${nekomorieuropa2}<br>
-                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnereuropa2}<br>
-                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkeuropa2}<br>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomorieuropa2}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnereuropa2}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkeuropa2}<br>
                 </p>
             </div>
             <br>
@@ -465,8 +467,8 @@ res.innerHTML = `
                     3 <img src="img/flag/astr.webp" alt="">Austrália<br>
                     4 <img src="img/flag/mon.webp" alt="">Mônaco<br>
                     <h2>Maiores vencedores</h2>
-                    <img src="img/Nekomori.png" alt=""> Nekomori    ${nekomoriespelho2}<br>
-                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkespelho2}<br>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoriespelho2}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkespelho2}<br>
                 </p>
             </div>
             <div class="padrao">
@@ -478,7 +480,7 @@ res.innerHTML = `
                     3<img src="img/flag/jap.webp" alt="">Japão<br>
                     4 <img src="img/flag/mon.webp" alt="">Mônaco<br>
                     <h2>Maiores vencedores</h2>
-                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkinternacional}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkinternacional}<br>
                 </p>
             </div>
             <div class="padrao">
@@ -490,7 +492,7 @@ res.innerHTML = `
                     3 <img src="img/flag/astr.webp" alt="">Austrália<br>
                     4<img src="img/flag/jap.webp" alt="">Japão<br>
                     <h2>Maiores vencedores</h2>
-                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnerpacifico}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerpacifico}<br>
                 </p>
             </div>
             <br>
@@ -498,9 +500,9 @@ res.innerHTML = `
                 <h1>Personalizado</h1>
                 <p>
                     <h2>Maiores vencedores</h2>
-                    <img src="img/Nekomori.png" alt=""> Nekomori    ${nekomoripersonalizado}<br>
-                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkpersonalizado}<br>
-                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnerpersonalizado}<br>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoripersonalizado}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkpersonalizado}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerpersonalizado}<br>
                 </p>
             </div>
         </div>
