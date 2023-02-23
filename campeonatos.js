@@ -383,13 +383,15 @@ res.innerHTML = `
             <div class="padrao">
                 <h1>Resistência I</h1>
                 <p>
-                    <h2>6 Grandes Prêmios</h2>
-                    1 <img src="img/flag/bel.webp" alt="">Bélgica<br>
-                    2 <img src="img/flag/sing.webp" alt="">Cingapura<br>
-                    3 <img src="img/flag/bra.webp" alt="">Brasil<br>
-                    4 <img src="img/flag/uk.webp" alt="">Grã-Bretanha<br>
-                    5 <img src="img/flag/ita.webp" alt="">Itália<br>
-                    6 <img src="img/flag/ale.webp" alt="">Alemanha<br>
+                    <div class="box1">
+                      <h2>6 Grandes Prêmios</h2>
+                      1 <img src="img/flag/bel.webp" alt="">Bélgica<br>
+                      2 <img src="img/flag/sing.webp" alt="">Cingapura<br>
+                      3 <img src="img/flag/bra.webp" alt="">Brasil<br>
+                      4 <img src="img/flag/uk.webp" alt="">Grã-Bretanha<br>
+                      5 <img src="img/flag/ita.webp" alt="">Itália<br>
+                      6 <img src="img/flag/ale.webp" alt="">Alemanha<br>
+                    </div>
                     <h2>Maiores vencedores</h2>
                     <table>
                       <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkresistencia1}<br>
@@ -401,19 +403,33 @@ res.innerHTML = `
             <div class="padrao">
                 <h1>Resistência II</h1>
                 <p>
-                    <h2>11 Grandes Prêmios</h2>
-                    1 <img src="img/flag/bel.webp" alt="">Bélgica<br>
-                    2 <img src="img/flag/sing.webp" alt="">Cingapura<br>
-                    3 <img src="img/flag/bra.webp" alt="">Brasil<br>
-                    4 <img src="img/flag/uk.webp" alt="">Grã-Bretanha<br>
-                    5 <img src="img/flag/ita.webp" alt="">Itália<br>
-                    6 <img src="img/flag/ale.webp" alt="">Alemanha<br>
-                    7 <img src="img/flag/abu.webp" alt="">Abu Dhabi<br>
-                    8 <img src="img/flag/us.webp" alt="">Estados Unidos<br>
-                    9 <img src="img/flag/astr.webp" alt="">Austrália<br>
-                    10<img src="img/flag/jap.webp" alt="">Japão<br>
-                    11 <img src="img/flag/mon.webp" alt="">Mônaco<br>
-                    <h2 style="margin-top: 0px;">Maiores vencedores</h2>
+                    <div class="box1">
+                      <h2>11 Grandes Prêmios</h2>
+                      <table>
+                        <tr>
+                          <td>1 <img src="img/flag/bel.webp" alt="">Bélgica</td>
+                          <td>7 <img src="img/flag/abu.webp" alt="">Abu Dhabi</td>
+                        </tr>
+                        <tr>
+                          <td>2 <img src="img/flag/sing.webp" alt="">Cingapura</td>
+                          <td>8 <img src="img/flag/us.webp" alt="">Estados Unidos</td>
+                        </tr>
+                        <tr>
+                          <td>3 <img src="img/flag/bra.webp" alt="">Brasil</td>
+                          <td>9 <img src="img/flag/astr.webp" alt="">Austrália</td>
+                        </tr>
+                        <tr>
+                          <td>4 <img src="img/flag/uk.webp" alt="">Grã-Bretanha</td>
+                          <td>10<img src="img/flag/jap.webp" alt="">Japão</td>
+                        </tr>
+                        <tr>
+                          <td>5 <img src="img/flag/ita.webp" alt="">Itália</td>
+                          <td>11 <img src="img/flag/mon.webp" alt="">Mônaco</td>
+                        </tr>
+                        <tr><td>6 <img src="img/flag/ale.webp" alt="">Alemanha</tr></td>
+                      </table>
+                    </div>
+                    <h2>Maiores vencedores</h2>
                     <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerresistencia2}<br>
                     <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkresistencia2}<br>
                 </p>
@@ -421,10 +437,12 @@ res.innerHTML = `
             <div class="padrao">
                 <h1>Europa I</h1>
                 <p>
-                    <h2>3 Grandes Prêmios</h2>
-                        1 <img src="img/flag/ita.webp" alt="">Itália<br>
-                        2 <img src="img/flag/ale.webp" alt="">Alemanha<br>
-                        3 <img src="img/flag/bel.webp" alt="">Bélgica<br>
+                    <div class="box1">
+                      <h2>3 Grandes Prêmios</h2>
+                          1 <img src="img/flag/ita.webp" alt="">Itália<br>
+                          2 <img src="img/flag/ale.webp" alt="">Alemanha<br>
+                          3 <img src="img/flag/bel.webp" alt="">Bélgica<br>
+                    </div>
                     <h2>Maiores vencedores</h2>
                     <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomorieuropa1}<br>
                     <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnereuropa1}<br>
@@ -434,12 +452,14 @@ res.innerHTML = `
             <div class="padrao">
                 <h1>Europa II</h1>
                 <p>
-                    <h2>5 Grandes Prêmios</h2>
-                    1 <img src="img/flag/ale.webp" alt="">Alemanha<br>
-                    2 <img src="img/flag/uk.webp" alt="">Grã-Bretanha<br>
-                    3 <img src="img/flag/ita.webp" alt="">Itália<br>
-                    4 <img src="img/flag/bel.webp" alt="">Bélgica<br>
-                    5 <img src="img/flag/mon.webp" alt="">Mônaco<br>
+                    <div class="box1">
+                      <h2>5 Grandes Prêmios</h2>
+                      1 <img src="img/flag/ale.webp" alt="">Alemanha<br>
+                      2 <img src="img/flag/uk.webp" alt="">Grã-Bretanha<br>
+                      3 <img src="img/flag/ita.webp" alt="">Itália<br>
+                      4 <img src="img/flag/bel.webp" alt="">Bélgica<br>
+                      5 <img src="img/flag/mon.webp" alt="">Mônaco<br>
+                    </div>
                     <h2>Maiores vencedores</h2>
                     <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomorieuropa2}<br>
                     <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnereuropa2}<br>
@@ -450,22 +470,25 @@ res.innerHTML = `
             <div class="padrao">
                 <h1>Espelho I</h1>
                 <p>
-                    <h2>4 Grandes Prêmios</h2>
-                    1 <img src="img/flag/sing.webp" alt="">Cingapura<br>
-                    2 <img src="img/flag/abu.webp" alt="">Abu Dhabi<br>
-                    3 <img src="img/flag/us.webp" alt="">Estados Unidos<br>
-                    4<img src="img/flag/jap.webp" alt="">Japão<br>
+                    <div class="box1">
+                      <h2>4 Grandes Prêmios</h2>
+                      1 <img src="img/flag/sing.webp" alt="">Cingapura<br>
+                      2 <img src="img/flag/abu.webp" alt="">Abu Dhabi<br>
+                      3 <img src="img/flag/us.webp" alt="">Estados Unidos<br>
+                      4<img src="img/flag/jap.webp" alt="">Japão<br>
+                    </div>
                 </p>
             </div>
             <div class="padrao">
                 <h1>Espelho II</h1>
                 <p>
-                    <h2>4 Grandes Prêmios</h2>
-            
-                    1 <img src="img/flag/bra.webp" alt="">Brasil<br>
-                    2 <img src="img/flag/ita.webp" alt="">Itália<br>
-                    3 <img src="img/flag/astr.webp" alt="">Austrália<br>
-                    4 <img src="img/flag/mon.webp" alt="">Mônaco<br>
+                    <div class="box1">
+                      <h2>4 Grandes Prêmios</h2>
+                      1 <img src="img/flag/bra.webp" alt="">Brasil<br>
+                      2 <img src="img/flag/ita.webp" alt="">Itália<br>
+                      3 <img src="img/flag/astr.webp" alt="">Austrália<br>
+                      4 <img src="img/flag/mon.webp" alt="">Mônaco<br>
+                    </div>
                     <h2>Maiores vencedores</h2>
                     <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoriespelho2}<br>
                     <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkespelho2}<br>
@@ -474,11 +497,13 @@ res.innerHTML = `
             <div class="padrao">
                 <h1>Internacional</h1>
                 <p>
-                    <h2>4 Grandes Prêmios</h2>
-                    1 <img src="img/flag/uk.webp" alt="">Grã-Bretanha<br>
-                    2 <img src="img/flag/abu.webp" alt="">Abu Dhabi<br>
-                    3<img src="img/flag/jap.webp" alt="">Japão<br>
-                    4 <img src="img/flag/mon.webp" alt="">Mônaco<br>
+                    <div class="box1">
+                      <h2>4 Grandes Prêmios</h2>
+                      1 <img src="img/flag/uk.webp" alt="">Grã-Bretanha<br>
+                      2 <img src="img/flag/abu.webp" alt="">Abu Dhabi<br>
+                      3<img src="img/flag/jap.webp" alt="">Japão<br>
+                      4 <img src="img/flag/mon.webp" alt="">Mônaco<br>
+                    </div>
                     <h2>Maiores vencedores</h2>
                     <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkinternacional}<br>
                 </p>
@@ -486,11 +511,13 @@ res.innerHTML = `
             <div class="padrao">
                 <h1>No Pacífico</h1>
                 <p>
-                    <h2>4 Grandes Prêmios</h2>
-                    1 <img src="img/flag/sing.webp" alt="">Cingapura<br>
-                    2 <img src="img/flag/abu.webp" alt="">Abu Dhabi<br>
-                    3 <img src="img/flag/astr.webp" alt="">Austrália<br>
-                    4<img src="img/flag/jap.webp" alt="">Japão<br>
+                    <div class="box1">
+                      <h2>4 Grandes Prêmios</h2>
+                      1 <img src="img/flag/sing.webp" alt="">Cingapura<br>
+                      2 <img src="img/flag/abu.webp" alt="">Abu Dhabi<br>
+                      3 <img src="img/flag/astr.webp" alt="">Austrália<br>
+                      4<img src="img/flag/jap.webp" alt="">Japão<br>
+                    </div>
                     <h2>Maiores vencedores</h2>
                     <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerpacifico}<br>
                 </p>
