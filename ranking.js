@@ -235,6 +235,7 @@ res.innerHTML = `
     <a class="menu" href="resultados.html">Resultados</a>
     <a class="menu" href="ranking.html">Rankings</a>
     <a class="menu" href="stats.html">Stats</a>
+    <a class="menu" href="campeonatos.html">Campeonatos</a>
 </menu>
 </header>
 

@@ -5,7 +5,7 @@
     --cor2:#3DADF2;
     --cor1:#13DCF2;
     --cor0:#0CF2F2;
-
+    --text:#000000d4;
 
 
 }
@@ -122,127 +122,31 @@ img {
     padding-right: 10px;
 }
 
-img.podium {
-    padding-right: 1px;
-}
-
-
-
-span {
-   /* display: none;*/
-    font-size: 18px;
-}
-
-span.Mercedes {
-    font-variant: small-caps;
-    color: cyan;
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.Caterham {
-    font-variant: small-caps;
-    color: rgb(0, 139, 0);
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.Ferrari {
-    font-variant: small-caps;
-    color: red;
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.RedBull {
-    font-variant: small-caps;
-    color: blue;
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.Satsu {
-    font-variant: small-caps;
-    color: rgb(235, 2, 235);
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.ToroRosso {
-    font-variant: small-caps;
-    color: rgb(2, 60, 234);
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.Williams {
-    font-variant: small-caps;
-    color: rgb(66, 120, 246);
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.Lotus {
-    font-variant: small-caps;
-    color: yellow;
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.Sauber {
-    font-variant: small-caps;
-    color: rgb(198, 76, 76);
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.McLaren {
-    font-variant: small-caps;
-    color: orange;
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.ForceIndia {
-    font-variant: small-caps;
-    color: orange;
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.HRT {
-    font-variant: small-caps;
-    color: sienna;
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-span.Marussia {
-    font-variant: small-caps;
-    color: rgba(82, 82, 82, 0.698);
-    text-shadow: 0.5px 0.5px 0.5px black;
-
-}
-
-span.TecNova {
-    font-variant: small-caps;
-    color: rgb(235, 2, 235);
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-#statspage {
+div {
     margin: auto;
     margin-top: 50px;
-    width: 1000px;
+    width: 100%;
     padding: 0px;
-    text-align: center;
+    text-align: center;;
+    
+    
 }
 
-.statsplayer {
+.padrao {
     background-color: white;
-    text-align: center;
+    text-align: left;
+    padding: 20px;
     margin: 10px;
     display: inline-table;
     width: 300px;
-    height: 200px;
+    height: 350px;
     border: 1px solid black;
-    color: var(--text);
     border-radius: 25px;
+    color: var(--text);
     font-family: 'Luckiest Guy', cursive;
     font-variant: small-caps;
     font-size: 16px;
+
 }
 
-.statsplayer > p {
-    text-align: left;
-    margin-left: 50px;
-}
 

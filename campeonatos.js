@@ -355,105 +355,171 @@ tableRows.forEach(function(row) {
     }
   })
 
-   
 
-function stats() {
-    res.innerHTML = `
-    <body>
+
+
+
+
+
+
+
+function campeonatos() {
+
+res.innerHTML = `
+<body id="res" onload="campeonatos()">
     <header>
-    <button id="myButton">Dark/Light</button>
-    <h1><a href="index.html"><img src="img/logom.png" alt=""></a></h1>
-    <menu id="mainmenu">
-        <a class="menu" href="index.html">Home</a>
-        <a class="menu" href="resultados.html">Resultados</a>
-        <a class="menu" href="ranking.html">Rankings</a>
-        <a class="menu" href="stats.html">Stats</a>
-        <a class="menu" href="campeonatos.html">Campeonatos</a>
-</menu>
+        <button id="myButton">Dark/Light</button>
+        <h1><a href="index.html"><img src="img/logom.png" alt=""></a></h1>
+            <menu id="mainmenu">
+                <a class="menu" href="index.html">Home</a>
+                <a class="menu" href="resultados.html">Resultados</a>
+                <a class="menu" href="ranking.html">Rankings</a>
+                <a class="menu" href="stats.html">Stats</a>
+                <a class="menu" href="campeonatos.html">Campeonatos</a>
+            </menu>
     </header>
-    <div id="statspage">
-        <div class="statsplayer"><h1>Gunner</h1>
-        <img src="img/gunner89.png" alt=""> <br>
-    <p>
-    🏆${Gunner.p1} Títulos  <br>
-    🥈${Gunner.p2} vice-campeonatos<br>
-    🥉${Gunner.p3} vezes terceiro lugar <br>
-    <img class="podium" src="img/podium.png" alt=""> ${Gunner.podium} vezes no pódio
-    <br>
-    Pontos: ${Gunner.pontos}<br>
-    Carro mais usado: <span class="McLaren">McLaren</span><br> </p>
-    <h2>Campeonatos:</h2>
-    <p>
-    Resistência I:🏆 ${gunnerresistencia1}<br>
-    Resistência II:🏆 ${gunnerresistencia2}<br>
-    Europa I:🏆 ${gunnereuropa1}<br>
-    Europa II:🏆 ${gunnereuropa2}<br>
-    Espelho I:🏆 ${gunnerespelho1}<br>
-    Espelho II:🏆 ${gunnerespelho2}<br>
-    Internacional:🏆 ${gunnerinternacional}<br>
-    No Pacífico:🏆 ${gunnerpacifico}<br>
-    Personalizado:🏆 ${gunnerpersonalizado}<br>
-    </p>
-    </div>
-        <div class="statsplayer"><h1>Sliink</h1>
-        <img src="img/sliink89.png" alt="">
-    <p>
-    🏆 ${Sliink.p1} Títulos  <br>
-    🥈 ${Sliink.p2} vice-campeonatos<br>
-    🥉 ${Sliink.p3} vezes terceiro lugar <br>
-    <img class="podium" src="img/podium.png" alt=""> ${Sliink.podium} vezes no pódio
-    <br>
-    Pontos: ${Sliink.pontos} <br>
-    Carro mais usado: <span class="Ferrari">Ferrari</span></p>
-    <h2>Campeonatos:</h2>
-    <p>
-    Resistência I:🏆 ${sliinkresistencia1}<br>
-    Resistência II:🏆 ${sliinkresistencia2}<br>
-    Europa I:🏆 ${sliinkeuropa1}<br>
-    Europa II:🏆 ${sliinkeuropa2}<br>
-    Espelho I:🏆 ${sliinkespelho1}<br>
-    Espelho II:🏆 ${sliinkespelho2}<br>
-    Internacional:🏆 ${sliinkinternacional}<br>
-    No Pacífico:🏆 ${sliinkpacifico}<br>
-    Personalizado:🏆 ${sliinkpersonalizado}<br>
-    </p>
-    </div>
-        <div class="statsplayer"><h1>Nekomori</h1>
-            <img src="img/nekomori89.png" alt="">
-    <p>
-    🏆 ${Nekomori.p1} Títulos  <br>
-    🥈 ${Nekomori.p2} vice-campeonatos<br>
-    🥉 ${Nekomori.p3} vezes terceiro lugar <br>
-    <img class="podium" src="img/podium.png" alt=""> ${Nekomori.podium} vezes no pódio
-    <br>
-    Pontos: ${Nekomori.pontos} <br>
-    Carro mais usado: <span class="Caterham">Caterham</span></p>
-    <h2>Campeonatos:</h2>
-    <p>
-    Resistência I:🏆 ${nekomoriresistencia1}<br>
-    Resistência II:🏆 ${nekomoriresistencia2}<br>
-    Europa I:🏆 ${nekomorieuropa1}<br>
-    Europa II:🏆 ${nekomorieuropa2}<br>
-    Espelho I:🏆 ${nekomoriespelho1}<br>
-    Espelho II:🏆 ${nekomoriespelho2}<br>
-    Internacional:🏆 ${nekomoriinternacional}<br>
-    No Pacífico:🏆 ${nekomoripacifico}<br>
-    Personalizado:🏆 ${nekomoripersonalizado}<br>
-    </p>
-    </div>
+    <main>
+        <div>
+            <div class="padrao">
+                <h1>Resistência I</h1>
+                <p>
+                    <h2>6 Grandes Prêmios</h2>
+                    1 <img src="img/flag/bel.webp" alt="">Bélgica<br>
+                    2 <img src="img/flag/sing.webp" alt="">Cingapura<br>
+                    3 <img src="img/flag/bra.webp" alt="">Brasil<br>
+                    4 <img src="img/flag/uk.webp" alt="">Grã-Bretanha<br>
+                    5 <img src="img/flag/ita.webp" alt="">Itália<br>
+                    6 <img src="img/flag/ale.webp" alt="">Alemanha<br>
+                    <h2>Maiores vencedores</h2>
+                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkresistencia1}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnerresistencia1}<br>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    ${nekomoriresistencia1}<br>
+                </p>
+            </div>
+            <div class="padrao">
+                <h1>Resistência II</h1>
+                <p>
+                    <h2>11 Grandes Prêmios</h2>
+                    1 <img src="img/flag/bel.webp" alt="">Bélgica<br>
+                    2 <img src="img/flag/sing.webp" alt="">Cingapura<br>
+                    3 <img src="img/flag/bra.webp" alt="">Brasil<br>
+                    4 <img src="img/flag/uk.webp" alt="">Grã-Bretanha<br>
+                    5 <img src="img/flag/ita.webp" alt="">Itália<br>
+                    6 <img src="img/flag/ale.webp" alt="">Alemanha<br>
+                    7 <img src="img/flag/abu.webp" alt="">Abu Dhabi<br>
+                    8 <img src="img/flag/us.webp" alt="">Estados Unidos<br>
+                    9 <img src="img/flag/astr.webp" alt="">Austrália<br>
+                    10<img src="img/flag/jap.webp" alt="">Japão<br>
+                    11 <img src="img/flag/mon.webp" alt="">Mônaco<br>
+                    <h2 style="margin-top: 0px;">Maiores vencedores</h2>
+                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnerresistencia2}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkresistencia2}<br>
+                </p>
+            </div>
+            <div class="padrao">
+                <h1>Europa I</h1>
+                <p>
+                    <h2>3 Grandes Prêmios</h2>
+                        1 <img src="img/flag/ita.webp" alt="">Itália<br>
+                        2 <img src="img/flag/ale.webp" alt="">Alemanha<br>
+                        3 <img src="img/flag/bel.webp" alt="">Bélgica<br>
+                    <h2>Maiores vencedores</h2>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    ${nekomorieuropa1}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnereuropa1}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkeuropa1}<br>
+                </p>
+            </div>
+            <div class="padrao">
+                <h1>Europa II</h1>
+                <p>
+                    <h2>5 Grandes Prêmios</h2>
+                    1 <img src="img/flag/ale.webp" alt="">Alemanha<br>
+                    2 <img src="img/flag/uk.webp" alt="">Grã-Bretanha<br>
+                    3 <img src="img/flag/ita.webp" alt="">Itália<br>
+                    4 <img src="img/flag/bel.webp" alt="">Bélgica<br>
+                    5 <img src="img/flag/mon.webp" alt="">Mônaco<br>
+                    <h2>Maiores vencedores</h2>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    ${nekomorieuropa2}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnereuropa2}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkeuropa2}<br>
+                </p>
+            </div>
+            <br>
+            <div class="padrao">
+                <h1>Espelho I</h1>
+                <p>
+                    <h2>4 Grandes Prêmios</h2>
+                    1 <img src="img/flag/sing.webp" alt="">Cingapura<br>
+                    2 <img src="img/flag/abu.webp" alt="">Abu Dhabi<br>
+                    3 <img src="img/flag/us.webp" alt="">Estados Unidos<br>
+                    4<img src="img/flag/jap.webp" alt="">Japão<br>
+                </p>
+            </div>
+            <div class="padrao">
+                <h1>Espelho II</h1>
+                <p>
+                    <h2>4 Grandes Prêmios</h2>
+            
+                    1 <img src="img/flag/bra.webp" alt="">Brasil<br>
+                    2 <img src="img/flag/ita.webp" alt="">Itália<br>
+                    3 <img src="img/flag/astr.webp" alt="">Austrália<br>
+                    4 <img src="img/flag/mon.webp" alt="">Mônaco<br>
+                    <h2>Maiores vencedores</h2>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    ${nekomoriespelho2}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkespelho2}<br>
+                </p>
+            </div>
+            <div class="padrao">
+                <h1>Internacional</h1>
+                <p>
+                    <h2>4 Grandes Prêmios</h2>
+                    1 <img src="img/flag/uk.webp" alt="">Grã-Bretanha<br>
+                    2 <img src="img/flag/abu.webp" alt="">Abu Dhabi<br>
+                    3<img src="img/flag/jap.webp" alt="">Japão<br>
+                    4 <img src="img/flag/mon.webp" alt="">Mônaco<br>
+                    <h2>Maiores vencedores</h2>
+                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkinternacional}<br>
+                </p>
+            </div>
+            <div class="padrao">
+                <h1>No Pacífico</h1>
+                <p>
+                    <h2>4 Grandes Prêmios</h2>
+                    1 <img src="img/flag/sing.webp" alt="">Cingapura<br>
+                    2 <img src="img/flag/abu.webp" alt="">Abu Dhabi<br>
+                    3 <img src="img/flag/astr.webp" alt="">Austrália<br>
+                    4<img src="img/flag/jap.webp" alt="">Japão<br>
+                    <h2>Maiores vencedores</h2>
+                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnerpacifico}<br>
+                </p>
+            </div>
+            <br>
+            <div class="padrao">
+                <h1>Personalizado</h1>
+                <p>
+                    <h2>Maiores vencedores</h2>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    ${nekomoripersonalizado}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      ${sliinkpersonalizado}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      ${gunnerpersonalizado}<br>
+                </p>
+            </div>
+        </div>
 
-</body>
-    `
 
-    document.getElementById("myButton").addEventListener("click", function(){
-        var stylesheet = document.getElementById("myStylesheet");
-        if (stylesheet.getAttribute("href") == "stats.css") {
-          stylesheet.href = "stats2.css";
-        } else {
-          stylesheet.href = "stats.css";
-        }
-      });
+
+        
+
+    </main>
     
-      
-}
+    <script src="campeonatos.js"></script>
+</body>`
 
+document.getElementById("myButton").addEventListener("click", function(){
+    var stylesheet = document.getElementById("myStylesheet");
+    if (stylesheet.getAttribute("href") == "campeonatos.css") {
+      stylesheet.href = "campeonatos2.css";
+    } else {
+      stylesheet.href = "campeonatos.css";
+    }
+  });
+}

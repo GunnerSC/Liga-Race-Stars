@@ -5,25 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Race Stars League</title>
-    <link id="myStylesheet" rel="stylesheet" href="resultados.css">
+    <link id="myStylesheet" rel="stylesheet" href="campeonatos.css">
 </head>
-<body id="res">
-    <header>
-        <button id="myButton">Dark/Light</button>
-        <h1><a href="index.html"><img src="img/logom.png" alt=""></a></h1>
-            <menu id="mainmenu">
-                <a class="menu" href="index.html">Home</a>
-                <a class="menu" href="resultados.html">Resultados</a>
-                <a class="menu" href="ranking.html">Rankings</a>
-                <a class="menu" href="stats.html">Stats</a>
-                <a class="menu" href="campeonatos.html">Campeonatos</a>
-            </menu>
-    </header>
+<body id="res" onload="campeonatos()">
 
-        <div>    
-            <h2>Edições</h2>
-            <table id="maintable">
-                <colgroup>
+    <div id="hiddenres">
+        <h2>Edições</h2>
+        <table id="maintable">
+            <colgroup>
                 <col class="coledi">
                 <col class="colp1">
                 <col class="colp2">
@@ -362,8 +351,9 @@
         
             </table> 
 
-            <script src="resultados.js"></script>
-    
+        <a href="index.html"><div id="voltar">Voltar</div></a>
+
         
+<script src="campeonatos.js"></script>
 </body>
 </html>
