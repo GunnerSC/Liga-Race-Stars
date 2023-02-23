@@ -256,13 +256,13 @@ res.innerHTML = `
             </tr>
             <tr class="trtitle">
             <td class="tdtitle dvpos">2°</td>
-            <td class="tdtitle"><img src="img/Gunner.png" alt="">${Gunner.nome}</td>
-            <td class="tdtitle tptitle"><span class="spantitle dvp1">🏆${Gunner.p1}</span><span class="spantitle dvp2">🥈${Gunner.p2}</span><span class="spantitle dvp3">🥉${Gunner.p3}</span><span class="spantitle"><img src="img/podium.png" alt="">${Gunner.podium}</span></td>
-            </tr>
-            <tr class="trtitle">
-            <td class="tdtitle dvpos">3°</td>
             <td class="tdtitle"><img src="img/Sliink.png" alt="">${Sliink.nome}</td>
             <td class="tdtitle tptitle"><span class="spantitle dvp1">🏆${Sliink.p1}</span><span class="spantitle dvp2">🥈${Sliink.p2}</span><span class="spantitle dvp3">🥉${Sliink.p3}</span><span class="spantitle"><img src="img/podium.png" alt="">${Sliink.podium}</span></td>
+            <tr class="trtitle">
+            <td class="tdtitle dvpos">3°</td>
+            <td class="tdtitle"><img src="img/Gunner.png" alt="">${Gunner.nome}</td>
+            <td class="tdtitle tptitle"><span class="spantitle dvp1">🏆${Gunner.p1}</span><span class="spantitle dvp2">🥈${Gunner.p2}</span><span class="spantitle dvp3">🥉${Gunner.p3}</span><span class="spantitle"><img src="img/podium.png" alt="">${Gunner.podium}</span></td>
+            </tr>    
             </tr>
             <tr class="trtitle">
             <td class="tdtitle dvpos">4°</td>
