@@ -250,7 +250,7 @@ span {
 #statspage {
     margin: auto;
     margin-top: 50px;
-    width: 1000px;
+    width: 1000px fixed;
     padding: 0px;
     text-align: center;
     text-shadow: 0.5px 0.5px 1px black;

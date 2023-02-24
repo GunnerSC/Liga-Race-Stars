@@ -5,6 +5,7 @@
     --cor2:#3DADF2;
     --cor1:#13DCF2;
     --cor0:#0CF2F2;
+    --text:#000000d4;
 
 
 
@@ -221,7 +222,7 @@ span.TecNova {
 #statspage {
     margin: auto;
     margin-top: 50px;
-    width: 1000px;
+    width: 1000px fixed;
     padding: 0px;
     text-align: center;
 }

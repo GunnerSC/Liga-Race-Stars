@@ -14,6 +14,7 @@ body {
     background-image: linear-gradient(to right, var(--cor0), var(--cor1), var(--cor2), var(--cor3), var(--cor4));
 	background-repeat: black no-repeat;
  	background-size: cover;
+     background-attachment: fixed;
     color: white;
     width:100%;
     margin: auto;
@@ -120,7 +121,7 @@ a:hover, input:hover {
 table {
     margin: auto;
     background-color: white;
-    width: 600px;
+    width: 600px fixed;
     border-collapse: collapse;
     border: 1px solid rgba(255, 255, 255, 0.496);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -133,7 +134,7 @@ table {
 table.tabletitle {
     margin: auto;
     background-color: white;
-    width: 600px;
+    width: 600px fixed;
     border-collapse: collapse;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--text);
@@ -150,7 +151,7 @@ table.tabletitle {
 }
 
 table#construtor {
-    width: 400px;
+    width: 400px fixed;
     margin: auto;
     font-size: 20px;
  	margin-bottom: 50px;
@@ -173,7 +174,7 @@ td {
 
 
 .tablepts {
-    width: 400px;
+    width: 400px fixed;
     margin: auto;
     font-size: 20px;
     margin-bottom: 50px;

@@ -17,7 +17,7 @@ body {
     background: black url(img/backgroundfull.jpg) center top no-repeat fixed;
     background-size: cover;
     color: white;
-    width:1000px;
+    width:100%;
     margin: auto;
     font-variant: small-caps;
     overflow-x: auto;
@@ -31,7 +31,7 @@ body {
 }
 
 menu {
-    width: 800px;
+    width: fixed;
     text-align: center;
     margin: auto;
     padding: 0px;
