@@ -394,8 +394,8 @@ res.innerHTML = `
                     </div>
                     <h2>Maiores vencedores</h2>
                     <table>
-                      <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkresistencia1}<br>
                       <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerresistencia1}<br>
+                      <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkresistencia1}<br>
                       <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoriresistencia1}<br>
                                       </p>
                     </table>
