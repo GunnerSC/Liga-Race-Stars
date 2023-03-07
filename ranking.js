@@ -252,20 +252,26 @@ res.innerHTML = `
             
         <tr class="trtitle">
             <td class="tdtitle dvpos">1°</td>
+
             <td class="tdtitle"><img src="img/Nekomori.png" alt="">${Nekomori.nome}</td>
             <td class="tdtitle tptitle"><span class="spantitle dvp1">🏆${Nekomori.p1} </span><span class="spantitle dvp2">🥈${Nekomori.p2}</span><span class="spantitle dvp3">🥉${Nekomori.p3}</span><span class="spantitle"><img src="img/podium.png" alt="">${Nekomori.podium}</span></td>
+            
         </tr>
 
         <tr class="trtitle">
             <td class="tdtitle dvpos">2°</td>
-            <td class="tdtitle"><img src="img/Sliink.png" alt="">${Sliink.nome}</td>
-            <td class="tdtitle tptitle"><span class="spantitle dvp1">🏆${Sliink.p1}</span><span class="spantitle dvp2">🥈${Sliink.p2}</span><span class="spantitle dvp3">🥉${Sliink.p3}</span><span class="spantitle"><img src="img/podium.png" alt="">${Sliink.podium}</span></td>
+
+            <td class="tdtitle"><img src="img/Gunner.png" alt="">${Gunner.nome}</td>
+            <td class="tdtitle tptitle"><span class="spantitle dvp1">🏆${Gunner.p1}</span><span class="spantitle dvp2">🥈${Gunner.p2}</span><span class="spantitle dvp3">🥉${Gunner.p3}</span><span class="spantitle"><img src="img/podium.png" alt="">${Gunner.podium}</span></td>
+
         </tr>
 
         <tr class="trtitle">
             <td class="tdtitle dvpos">3°</td>
-            <td class="tdtitle"><img src="img/Gunner.png" alt="">${Gunner.nome}</td>
-            <td class="tdtitle tptitle"><span class="spantitle dvp1">🏆${Gunner.p1}</span><span class="spantitle dvp2">🥈${Gunner.p2}</span><span class="spantitle dvp3">🥉${Gunner.p3}</span><span class="spantitle"><img src="img/podium.png" alt="">${Gunner.podium}</span></td>
+
+            <td class="tdtitle"><img src="img/Sliink.png" alt="">${Sliink.nome}</td>
+            <td class="tdtitle tptitle"><span class="spantitle dvp1">🏆${Sliink.p1}</span><span class="spantitle dvp2">🥈${Sliink.p2}</span><span class="spantitle dvp3">🥉${Sliink.p3}</span><span class="spantitle"><img src="img/podium.png" alt="">${Sliink.podium}</span></td>
+            
         </tr>    
         
         <tr class="trtitle">
