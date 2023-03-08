@@ -110,10 +110,6 @@ tableRows.forEach(function(row) {
         else if (carp3 && carp3.textContent.includes("Marussia")) {marussiap3++;}
         else if (carp3 && carp3.textContent.includes("TecNova")) {tecnovap3++;}})
     
-
-
-    
-
     let gunnerpodium = (gunnerp1+gunnerp2+gunnerp3)
     let sliinkpodium = (sliinkp1+sliinkp2+sliinkp3)
     let nekomoripodium = (nekomorip1+nekomorip2+nekomorip3)
