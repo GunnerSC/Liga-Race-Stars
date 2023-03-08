@@ -193,6 +193,7 @@ tableRows.forEach(function(row) {
         p1: balaop1,
         p2: balaop2,
         p3: balaop3,
+        podium: balaopodium,
     }
 
     let Newplayer = {
@@ -253,6 +254,16 @@ tableRows.forEach(function(row) {
   let nekomoriespelho1 = 0;
   let nekomoriespelho2 = 0;
   let nekomoripersonalizado = 0;
+
+  let balaoresistencia1 = 0;
+  let balaoresistencia2 = 0;
+  let balaoeuropa1 = 0;
+  let balaoeuropa2 = 0;
+  let balaointernacional =0;
+  let balaopacifico = 0;
+  let balaoespelho1 = 0;
+  let balaoespelho2 = 0;
+  let balaopersonalizado = 0;
   
   resistencia1Rows.forEach(row => {
     const p1 = row.querySelector('td.p1'); // seleciona a primeira coluna da linha atual
@@ -262,6 +273,8 @@ tableRows.forEach(function(row) {
       gunnerresistencia1++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoriresistencia1++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoresistencia1++;
     }
 
   });
@@ -274,6 +287,8 @@ tableRows.forEach(function(row) {
       gunnerresistencia2++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoriresistencia2++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoresistencia2++;
     }
   });
 
@@ -285,6 +300,8 @@ tableRows.forEach(function(row) {
       gunnereuropa1++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomorieuropa1++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoeuropa1++;
     }
   });
 
@@ -296,7 +313,10 @@ tableRows.forEach(function(row) {
       gunnereuropa2++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomorieuropa2++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoeuropa2++;
     }
+
   });
 
   internacionalRows.forEach(row => {
@@ -307,6 +327,8 @@ tableRows.forEach(function(row) {
       gunnerinternacional++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoriinternacional++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaointernacional++;
     }
   })
 
@@ -318,6 +340,8 @@ tableRows.forEach(function(row) {
       gunnerpacifico++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoripacifico++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaopacifico++;
     }
   })
   
@@ -329,6 +353,8 @@ tableRows.forEach(function(row) {
       gunnerespelho1++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoriespelho1++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoespelho1++;
     }
   })
 
@@ -340,6 +366,8 @@ tableRows.forEach(function(row) {
       gunnerespelho2++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoriespelho2++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoespelho2++;
     }
     
   })
@@ -352,6 +380,8 @@ tableRows.forEach(function(row) {
       gunnerpersonalizado++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoripersonalizado++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaopersonalizado++;
     }
   })
 
@@ -439,6 +469,30 @@ function stats() {
     Internacional:🏆 ${nekomoriinternacional}<br>
     No Pacífico:🏆 ${nekomoripacifico}<br>
     Personalizado:🏆 ${nekomoripersonalizado}<br>
+    </p>
+    </div>
+
+    <div class="statsplayer"><h1>Balao</h1>
+            <img src="img/balao89.png" alt="">
+    <p>
+    🏆 ${Balao.p1} Títulos  <br>
+    🥈 ${Balao.p2} vice-campeonatos<br>
+    🥉 ${Balao.p3} vezes terceiro lugar <br>
+    <img class="podium" src="img/podium.png" alt=""> ${Balao.podium} vezes no pódio
+    <br>
+    Pontos: ${Balao.pontos} <br>
+    Carro mais usado: <span class="Ferrari">Ferrari</span></p>
+    <h2>Campeonatos:</h2>
+    <p>
+    Resistência I:🏆 ${balaoresistencia1}<br>
+    Resistência II:🏆 ${balaoresistencia2}<br>
+    Europa I:🏆 ${balaoeuropa1}<br>
+    Europa II:🏆 ${balaoeuropa2}<br>
+    Espelho I:🏆 ${balaoespelho1}<br>
+    Espelho II:🏆 ${balaoespelho2}<br>
+    Internacional:🏆 ${balaointernacional}<br>
+    No Pacífico:🏆 ${balaopacifico}<br>
+    Personalizado:🏆 ${balaopersonalizado}<br>
     </p>
     </div>
 

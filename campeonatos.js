@@ -193,6 +193,7 @@ tableRows.forEach(function(row) {
         p1: balaop1,
         p2: balaop2,
         p3: balaop3,
+        podium: balaopodium,
     }
 
     let Newplayer = {
@@ -253,6 +254,16 @@ tableRows.forEach(function(row) {
   let nekomoriespelho1 = 0;
   let nekomoriespelho2 = 0;
   let nekomoripersonalizado = 0;
+
+  let balaoresistencia1 = 0;
+  let balaoresistencia2 = 0;
+  let balaoeuropa1 = 0;
+  let balaoeuropa2 = 0;
+  let balaointernacional =0;
+  let balaopacifico = 0;
+  let balaoespelho1 = 0;
+  let balaoespelho2 = 0;
+  let balaopersonalizado = 0;
   
   resistencia1Rows.forEach(row => {
     const p1 = row.querySelector('td.p1'); // seleciona a primeira coluna da linha atual
@@ -262,6 +273,8 @@ tableRows.forEach(function(row) {
       gunnerresistencia1++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoriresistencia1++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoresistencia1++;
     }
 
   });
@@ -274,6 +287,8 @@ tableRows.forEach(function(row) {
       gunnerresistencia2++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoriresistencia2++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoresistencia2++;
     }
   });
 
@@ -285,6 +300,8 @@ tableRows.forEach(function(row) {
       gunnereuropa1++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomorieuropa1++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoeuropa1++;
     }
   });
 
@@ -296,7 +313,10 @@ tableRows.forEach(function(row) {
       gunnereuropa2++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomorieuropa2++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoeuropa2++;
     }
+
   });
 
   internacionalRows.forEach(row => {
@@ -307,6 +327,8 @@ tableRows.forEach(function(row) {
       gunnerinternacional++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoriinternacional++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaointernacional++;
     }
   })
 
@@ -318,6 +340,8 @@ tableRows.forEach(function(row) {
       gunnerpacifico++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoripacifico++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaopacifico++;
     }
   })
   
@@ -329,6 +353,8 @@ tableRows.forEach(function(row) {
       gunnerespelho1++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoriespelho1++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoespelho1++;
     }
   })
 
@@ -340,6 +366,8 @@ tableRows.forEach(function(row) {
       gunnerespelho2++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoriespelho2++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaoespelho2++;
     }
     
   })
@@ -352,15 +380,12 @@ tableRows.forEach(function(row) {
       gunnerpersonalizado++;
     } else if (p1.textContent.includes('Nekomori')) {
       nekomoripersonalizado++;
+    } else if (p1.textContent.includes('Balao')) {
+      balaopersonalizado++;
     }
   })
 
-
-
-
-
-
-
+   
 
 
 function campeonatos() {
@@ -397,6 +422,7 @@ res.innerHTML = `
                       <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerresistencia1}<br>
                       <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkresistencia1}<br>
                       <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoriresistencia1}<br>
+                      <img src="img/Balao.png" alt=""> Balao    🏆${balaoresistencia1}<br>
                                       </p>
                     </table>
             </div>
@@ -432,6 +458,8 @@ res.innerHTML = `
                     <h2>Maiores vencedores</h2>
                     <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerresistencia2}<br>
                     <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkresistencia2}<br>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoriresistencia2}<br>
+                    <img src="img/Balao.png" alt=""> Balao    🏆${balaoresistencia2}<br>
                 </p>
             </div>
             <div class="padrao">
@@ -447,6 +475,7 @@ res.innerHTML = `
                     <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomorieuropa1}<br>
                     <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnereuropa1}<br>
                     <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkeuropa1}<br>
+                    <img src="img/Balao.png" alt=""> Balao    🏆${balaoeuropa1}<br>
                 </p>
             </div>
             <div class="padrao">
@@ -464,6 +493,7 @@ res.innerHTML = `
                     <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomorieuropa2}<br>
                     <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnereuropa2}<br>
                     <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkeuropa2}<br>
+                    <img src="img/Balao.png" alt=""> Balao    🏆${balaoeuropa2}<br>
                 </p>
             </div>
             <br>
@@ -477,6 +507,11 @@ res.innerHTML = `
                       3 <img src="img/flag/us.webp" alt="">Estados Unidos<br>
                       4<img src="img/flag/jap.webp" alt="">Japão<br>
                     </div>
+                    <h2>Maiores vencedores</h2>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoriespelho1}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerespelho1}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkespelho1}<br>
+                    <img src="img/Balao.png" alt=""> Balao    🏆${balaoespelho1}<br>
                 </p>
             </div>
             <div class="padrao">
@@ -492,6 +527,8 @@ res.innerHTML = `
                     <h2>Maiores vencedores</h2>
                     <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoriespelho2}<br>
                     <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkespelho2}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerespelho2}<br>
+                    <img src="img/Balao.png" alt=""> Balao    🏆${balaoespelho2}<br>
                 </p>
             </div>
             <div class="padrao">
@@ -506,6 +543,9 @@ res.innerHTML = `
                     </div>
                     <h2>Maiores vencedores</h2>
                     <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkinternacional}<br>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoriinternacional}<br>
+                    <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerinternacional}<br>
+                    <img src="img/Balao.png" alt=""> Balao    🏆${balaointernacional}<br>
                 </p>
             </div>
             <div class="padrao">
@@ -520,6 +560,9 @@ res.innerHTML = `
                     </div>
                     <h2>Maiores vencedores</h2>
                     <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerpacifico}<br>
+                    <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkpacifico}<br>
+                    <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoripacifico}<br>
+                    <img src="img/Balao.png" alt=""> Balao    🏆${balaopacifico}<br>
                 </p>
             </div>
             <br>
@@ -530,6 +573,7 @@ res.innerHTML = `
                     <img src="img/Nekomori.png" alt=""> Nekomori    🏆${nekomoripersonalizado}<br>
                     <img src="img/Sliink.png" alt=""> Sliink      🏆${sliinkpersonalizado}<br>
                     <img src="img/Gunner.png" alt=""> Gunner      🏆${gunnerpersonalizado}<br>
+                    <img src="img/Balao.png" alt=""> Balao    🏆${balaopersonalizado}<br>
                 </p>
             </div>
         </div>
