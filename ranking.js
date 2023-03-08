@@ -447,7 +447,7 @@ res.innerHTML = `
 
         <tr class="trtitle">
             <td class="tdtitle dvpos">5°</td>
-            <td class="tdtitle"><img src="img/balao.png" alt="">${Balao.nome}</td>
+            <td class="tdtitle"><img src="img/Balao.png" alt="">${Balao.nome}</td>
             <td class="tdtitle tptitle"><span class="spantitle dvp1">🏆${Balao.p1}</span><span class="spantitle dvp2">🥈${Balao.p2}</span><span class="spantitle dvp3">🥉${Balao.p3}</span><span class="spantitle"><img src="img/podium.png" alt="">${Balao.podium}</span></td>
         </tr>
             </tbody>
